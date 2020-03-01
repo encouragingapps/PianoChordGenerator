@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PianoChordGenerator.Domain", "PianoChordGenerator.Domain\PianoChordGenerator.Domain.csproj", "{205FD04B-18A1-4B1A-8B1B-3931F08EFED3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PianoChordGenerator.Web", "PianoChordGenerator.Web\PianoChordGenerator.Web.csproj", "{1A4EBA0B-50C4-49A1-B2B0-ABD951BA5586}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PianoChordGenerator.Test", "PianoChordGenerator.Test\PianoChordGenerator.Test.csproj", "{485CD1DF-3E58-4573-8E6A-92BF7ED270D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{205FD04B-18A1-4B1A-8B1B-3931F08EFED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{205FD04B-18A1-4B1A-8B1B-3931F08EFED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{205FD04B-18A1-4B1A-8B1B-3931F08EFED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{205FD04B-18A1-4B1A-8B1B-3931F08EFED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A4EBA0B-50C4-49A1-B2B0-ABD951BA5586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4EBA0B-50C4-49A1-B2B0-ABD951BA5586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4EBA0B-50C4-49A1-B2B0-ABD951BA5586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4EBA0B-50C4-49A1-B2B0-ABD951BA5586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{485CD1DF-3E58-4573-8E6A-92BF7ED270D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{485CD1DF-3E58-4573-8E6A-92BF7ED270D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{485CD1DF-3E58-4573-8E6A-92BF7ED270D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{485CD1DF-3E58-4573-8E6A-92BF7ED270D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37910934-394A-4762-B8E9-8C907A6D1FD9}
+	EndGlobalSection
+EndGlobal
