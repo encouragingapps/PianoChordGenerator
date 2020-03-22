@@ -17,4 +17,10 @@
     <ProjectReference Include="..\PianoChordGenerator.Domain\PianoChordGenerator.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Piano_Chord.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

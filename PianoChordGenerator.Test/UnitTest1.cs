@@ -10,6 +10,7 @@ namespace PianoChordGenerator.Test
         public void TestMethod1()
         {
             GenerateChordChart x = new GenerateChordChart();
+            
             x.GenerateChordSheet();
         }
     }
