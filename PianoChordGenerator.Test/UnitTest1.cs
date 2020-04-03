@@ -9,9 +9,8 @@ namespace PianoChordGenerator.Test
         [TestMethod]
         public void TestMethod1()
         {
-            GenerateChordChart x = new GenerateChordChart();
+            GenerateChordCharts x = new GenerateChordCharts();
             
-            x.GenerateChordSheet();
-        }
+         }
     }
 }
