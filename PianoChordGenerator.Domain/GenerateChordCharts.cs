@@ -23,8 +23,11 @@ namespace PianoChordGenerator.Domain
                 writer.WriteAttributeString("width", "8.5in");
                 writer.WriteAttributeString("height", "11in");
 
+                //Create Header
+                CreateHeader(writer, "Chart1Header", "C Root Position", "36", "47.4524");
+
                 const String y = "61.110298";
-                CreateHeader("Test");
+               
                 //White Keys
                 CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey1", "36.388744", y);
                 CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey2", "57.42458", y);
@@ -63,11 +66,20 @@ namespace PianoChordGenerator.Domain
 
         }
 
-        private void CreateHeader(string Title)
+        private void CreateHeader(XmlWriter writer, string id, string msg, string x, string y)
         {
-            Title = "";
+
+            const String HEADER_STYLE = "font-style:normal;font-weight:bold;font-size:20px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332";
+
             //https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text
             //<text x="40" y="35" class="heavy">cat</text>
+            writer.WriteStartElement("text");
+            writer.WriteAttributeString("id", id);
+            writer.WriteAttributeString("x", x);
+            writer.WriteAttributeString("y", y);
+            writer.WriteAttributeString("style", HEADER_STYLE);
+            writer.WriteString(msg);
+            writer.WriteEndElement();
         }
 
         private void CreateKey(XmlWriter writer, 
