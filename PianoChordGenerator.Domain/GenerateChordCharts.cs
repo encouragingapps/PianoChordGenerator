@@ -23,13 +23,27 @@ namespace PianoChordGenerator.Domain
                 writer.WriteAttributeString("width", "8.5in");
                 writer.WriteAttributeString("height", "11in");
 
-                const String y = "36.963078";
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey1", "7.3248205", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey2", "13.978922", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey3", "12.397395", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey4", "20.633028", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey5", "20.633028", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey1", "19.118507", y);
+                const String y = "61.110298";
+                CreateHeader("Test");
+                //White Keys
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey1", "36.388744", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey2", "57.42458", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey3", "78.460434", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey4", "97.801369", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey5", "118.8372", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey6", "141.56798", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey7", "160.90891", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey8", "181.94476", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey9", "202.98062", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey10", "224.01642", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey11", "245.05231", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey12", "266.0881", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey13", "287.12396", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey14", "308.15982", y);
+                                
+
+                //Black Keys
+                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey1", "52.424843", y);
                 
 
                 writer.WriteEndElement();
@@ -39,17 +53,24 @@ namespace PianoChordGenerator.Domain
 
         }
 
+        private void CreateHeader(string Title)
+        {
+            Title = "";
+            //https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text
+            //<text x="40" y="35" class="heavy">cat</text>
+        }
+
         private void CreateKey(XmlWriter writer, 
                                PianoKeyTypeEnum keytype,
                                string id, 
                                string x, 
                                string y)
         {
-            const String KEY_WHITE_WIDTH = "6.6541033";
-            const String KEY_WHITE_HEIGHT = "36.330299";
+            const String KEY_WHITE_WIDTH = "21.035841";
+            const String KEY_WHITE_HEIGHT = "126.2125";
             const String KEY_WHITE_STYLE = "fill:#ffffff;stroke:#000000;stroke-width:0.25942752;stroke-opacity:1";
-            const String KEY_BLACK_WIDTH = "3.0012417";
-            const String KEY_BLACK_HEIGHT = "20.712553";
+            const String KEY_BLACK_WIDTH = "9.4879274";
+            const String KEY_BLACK_HEIGHT = "71.956001";
             const String KEY_BLACK_STYLE = "fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.26192313;stroke-opacity:1";
 
             writer.WriteStartElement("rect");
