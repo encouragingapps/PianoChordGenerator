@@ -22,12 +22,14 @@ namespace PianoChordGenerator.Domain
                 writer.WriteStartElement(null, "svg", "http://www.w3.org/2000/svg");
                 writer.WriteAttributeString("width", "8.5in");
                 writer.WriteAttributeString("height", "11in");
+              
+                const String y = "61.110298";
+
+                #region "Chart 1"
 
                 //Create Header
                 CreateHeader(writer, "Chart1Header", "C Root Position", "36", "47.4524");
 
-                const String y = "61.110298";
-               
                 //White Keys
                 CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey1", "36.388744", y);
                 CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey2", "57.42458", y);
@@ -43,7 +45,6 @@ namespace PianoChordGenerator.Domain
                 CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey12", "266.0881", y);
                 CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey13", "287.12396", y);
                 CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey14", "308.15982", y);
-                                
 
                 //Black Keys
                 CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey1", "52.424843", y);
@@ -57,6 +58,13 @@ namespace PianoChordGenerator.Domain
                 CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey9", "283.543", y);
                 CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey10", "304.57877", y);
 
+
+                #endregion
+
+
+                #region "Chart 2"
+
+                #endregion
 
 
                 writer.WriteEndElement();
