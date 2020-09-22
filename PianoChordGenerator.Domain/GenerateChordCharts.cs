@@ -63,7 +63,36 @@ namespace PianoChordGenerator.Domain
 
 
                 #region "Chart 2"
+                //Create Header
+                CreateHeader(writer, "Chart1Header", "C Root Position", "408.3858", "47.4524");
 
+                //White Keys
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey1", "409.52878", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey2", "430.56461", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey3", "451.60046", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey4", "472.63632", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey5", "493.67215", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey6", "514.70795", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey7", "535.74377", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey8", "556.7796", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey9", "577.81549", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey10", "598.85126", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey11", "619.88715", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey12", "640.92297", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey13", "661.9588", y);
+                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey14", "682.99469", y);
+
+                //Black Keys
+                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey1", "425.56488", y);
+                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey2", "446.81256", y);
+                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey3", "488.97214", y);
+                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey4", "510.00803", y);
+                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey5", "531.04376", y);
+                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey6", "573.02759", y);
+                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey7", "594.06335", y);
+                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey8", "636.37219", y);
+                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey9", "658.37787", y);
+                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey10", "679.41364", y);
                 #endregion
 
 
