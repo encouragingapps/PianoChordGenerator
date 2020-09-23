@@ -4,6 +4,7 @@ using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
 using PianoChordGenerator.Domain.Enums;
+using PianoChordGenerator.Domain.Models;
 //https://www.c-sharpcorner.com/UploadFile/mahesh/create-xml-in-C-Sharp/
 
 namespace PianoChordGenerator.Domain
@@ -13,7 +14,10 @@ namespace PianoChordGenerator.Domain
        
         public GenerateChordCharts()
         {
-           
+
+            PianoChartData data = new PianoChartData();
+
+
             string pathname = @"C:\Temp\"+Guid.NewGuid().ToString()+"pianochord.svg";
 
             using (XmlWriter writer = XmlWriter.Create(pathname))
@@ -23,111 +27,25 @@ namespace PianoChordGenerator.Domain
                 writer.WriteAttributeString("width", "8.5in");
                 writer.WriteAttributeString("height", "11in");
               
-                const String y = "61.110298";
+               
+                //Render all of the headers first
+                foreach(PianoRenderModel item in 
+                        data.ChartList.Where(x => x.PianoObject == PianoObjectTypeEnum.HeaderText).ToList())
+                {
+                        CreateHeader(writer, item.GeneratePianoKeyFriendlyId(),
+                                         item.HeaderText,
+                                         item.X, item.Y);
+                }
 
-                #region "Chart 1"
-
-                //Create Header
-                CreateHeader(writer, "Chart1Header", "C Root Position", "36", "47.4524");
-
-                //White Keys
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey1", "36.388744", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey2", "57.42458", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey3", "78.460434", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey4", "97.801369", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey5", "118.8372", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey6", "139.87306", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey7", "160.90891", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey8", "181.94476", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey9", "202.98062", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey10", "224.01642", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey11", "245.05231", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey12", "266.0881", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey13", "287.12396", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart1WhiteKey14", "308.15982", y);
-
-                //Black Keys
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey1", "52.424843", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey2", "71.977608", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey3", "114.13718", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey4", "135.17305", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey5", "156.20889", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey6", "198.1927", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey7", "219.22852", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey8", "261.53732", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey9", "283.543", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart1BlackKey10", "304.57877", y);
-
-
-                #endregion
-
-
-                #region "Chart 2"
-                //Create Header
-                CreateHeader(writer, "Chart1Header", "C Root Position", "408.3858", "47.4524");
-
-                //White Keys
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart3WhiteKey1", "409.52878", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart3WhiteKey2", "430.56461", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart3WhiteKey3", "451.60046", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart3WhiteKey4", "472.63632", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart3WhiteKey5", "493.67215", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart3WhiteKey6", "514.70795", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart3WhiteKey7", "535.74377", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart3WhiteKey8", "556.7796", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart3WhiteKey9", "577.81549", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart3WhiteKey10", "598.85126", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart3WhiteKey11", "619.88715", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart3WhiteKey12", "640.92297", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart3WhiteKey13", "661.9588", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart3WhiteKey14", "682.99469", y);
-
-                //Black Keys
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart3BlackKey1", "425.56488", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart3BlackKey2", "446.81256", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart3BlackKey3", "488.97214", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart3BlackKey4", "510.00803", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart3BlackKey5", "531.04376", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart3BlackKey6", "573.02759", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart3BlackKey7", "594.06335", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart3BlackKey8", "636.37219", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart3BlackKey9", "658.37787", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart3BlackKey10", "679.41364", y);
-                #endregion
-
-
-                #region "Chart 3"
-                //Create Header
-                CreateHeader(writer, "Chart1Header", "C Root Position", "", "");
-
-                //White Keys
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart2WhiteKey1", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart2WhiteKey2", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart2WhiteKey3", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart2WhiteKey4", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart2WhiteKey5", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart2WhiteKey6", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart2WhiteKey7", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart2WhiteKey8", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart2WhiteKey9", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart2WhiteKey10", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart2WhiteKey11", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart2WhiteKey12", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart2WhiteKey13", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.WhiteKey, "Chart2WhiteKey14", "", y);
-
-                //Black Keys
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart2BlackKey1", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart2BlackKey2", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart2BlackKey3", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart2BlackKey4", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart2BlackKey5", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart2BlackKey6", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart2BlackKey7", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart2BlackKey8", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart2BlackKey9", "", y);
-                CreateKey(writer, PianoKeyTypeEnum.BlackKey, "Chart2BlackKey10", "", y);
-                #endregion
+                //Render all of the keys
+                foreach (PianoRenderModel item in
+                      data.ChartList.Where(x => x.PianoObject == PianoObjectTypeEnum.PianoKey).ToList())
+                {
+                    CreateKey(writer, 
+                              item.PianoKeyType, 
+                              item.GeneratePianoKeyFriendlyId(),
+                              item.X, item.Y);
+                }
 
 
                 //TODO: Add copyright
