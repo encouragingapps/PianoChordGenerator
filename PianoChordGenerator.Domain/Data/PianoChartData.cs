@@ -1274,6 +1274,1834 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
             #endregion
 
+            #region "Chart 5 Left"
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoObject = PianoObjectTypeEnum.HeaderText,
+                HeaderText = "C Root Position",
+                X = xHeaderLeftChart,
+                Y = yHeaderRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey1LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey2LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey3LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey4LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey5LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey6LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey7LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey8LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey9LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey10LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "11",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey11LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "12",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey12LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "13",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey13LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "14",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey14LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey1LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey2LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey3LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey4LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey5LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey6LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey7LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey8LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey9LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "5",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey10LeftChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            #endregion
+
+            #region "Chart 6 Right"
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoObject = PianoObjectTypeEnum.HeaderText,
+                HeaderText = "C Root Position",
+                X = xHeaderRightChart,
+                Y = yHeaderRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey1RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey2RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey3RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey4RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey5RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey6RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey7RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey8RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey9RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey10RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "11",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey11RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "12",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey12RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "13",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey13RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "14",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey14RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey1RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey2RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey3RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey4RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey5RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey6RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey7RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey8RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey9RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "6",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey10RightChart,
+                Y = yRow3
+            };
+
+            ChartList.Add(ChartItem);
+            #endregion
+
+            #region "Chart 7 Left"
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoObject = PianoObjectTypeEnum.HeaderText,
+                HeaderText = "C Root Position",
+                X = xHeaderLeftChart,
+                Y = yHeaderRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey1LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey2LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey3LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey4LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey5LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey6LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey7LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey8LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey9LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey10LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "11",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey11LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "12",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey12LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "13",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey13LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "14",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey14LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey1LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey2LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey3LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey4LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey5LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey6LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey7LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey8LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey9LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "7",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey10LeftChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            #endregion
+
+            #region "Chart 8 Right"           
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoObject = PianoObjectTypeEnum.HeaderText,
+                HeaderText = "C Root Position",
+                X = xHeaderRightChart,
+                Y = yHeaderRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey1RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey2RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey3RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey4RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey5RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey6RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey7RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey8RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey9RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey10RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "11",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey11RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "12",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey12RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "13",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey13RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "14",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey14RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey1RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey2RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey3RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey4RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey5RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey6RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey7RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey8RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey9RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "8",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey10RightChart,
+                Y = yRow4
+            };
+
+            ChartList.Add(ChartItem);
+
+            #endregion
+
+            #region "Chart 9 Left"
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoObject = PianoObjectTypeEnum.HeaderText,
+                HeaderText = "C Root Position",
+                X = xHeaderLeftChart,
+                Y = yHeaderRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey1LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey2LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey3LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey4LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey5LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey6LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey7LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey8LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey9LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey10LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "11",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey11LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "12",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey12LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "13",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey13LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "14",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey14LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey1LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey2LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey3LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey4LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey5LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey6LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey7LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey8LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey9LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "9",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey10LeftChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            #endregion
+
+            #region "Chart 10 Right"           
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoObject = PianoObjectTypeEnum.HeaderText,
+                HeaderText = "C Root Position",
+                X = xHeaderRightChart,
+                Y = yHeaderRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey1RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey2RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey3RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey4RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey5RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey6RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey7RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey8RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey9RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey10RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "11",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey11RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "12",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey12RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "13",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey13RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "14",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey14RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey1RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey2RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey3RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey4RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey5RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey6RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey7RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey8RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey9RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoRenderModel
+            {
+                ChartId = "10",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.PianoKey,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey10RightChart,
+                Y = yRow5
+            };
+
+            ChartList.Add(ChartItem);
+
+            #endregion
+
 
         }
 
