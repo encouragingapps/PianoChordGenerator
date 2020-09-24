@@ -32,7 +32,7 @@ namespace PianoChordGenerator.Domain
                 foreach(PianoRenderModel item in 
                         data.ChartList.Where(x => x.PianoObject == PianoObjectTypeEnum.HeaderText).ToList())
                 {
-                        CreateHeader(writer, item.GeneratePianoKeyFriendlyId(),
+                        CreateHeader(writer, item.GenerateHeaderFriendlyId(),
                                          item.HeaderText,
                                          item.X, item.Y);
                 }
