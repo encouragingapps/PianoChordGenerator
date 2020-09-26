@@ -7,6 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PianoChordGenerator.Domain"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PianoChordGenerator.Test", "PianoChordGenerator.Test\PianoChordGenerator.Test.csproj", "{485CD1DF-3E58-4573-8E6A-92BF7ED270D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PianoChordGenerator.WinUI", "PianoChordGenerator.WinUI\PianoChordGenerator.WinUI.csproj", "{FD04FD4D-C6D8-47F1-970D-C15C8B8540BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C0A18638-0496-4DEA-9C96-281F4421C514}"
+	ProjectSection(SolutionItems) = preProject
+		AdditionalNotes.txt = AdditionalNotes.txt
+		..\..\..\Downloads\PianoChordGenerator.ico = ..\..\..\Downloads\PianoChordGenerator.ico
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +29,10 @@ Global
 		{485CD1DF-3E58-4573-8E6A-92BF7ED270D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{485CD1DF-3E58-4573-8E6A-92BF7ED270D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{485CD1DF-3E58-4573-8E6A-92BF7ED270D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD04FD4D-C6D8-47F1-970D-C15C8B8540BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD04FD4D-C6D8-47F1-970D-C15C8B8540BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD04FD4D-C6D8-47F1-970D-C15C8B8540BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD04FD4D-C6D8-47F1-970D-C15C8B8540BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,9 +5,9 @@ using System.Text;
 
 namespace PianoChordGenerator.Domain.Models
 {
-    public class PianoRenderModel
+    public class PianoChartRenderModel 
     {
-        
+
         public string PianoKeyId { get; set; }
         public string ChartId { get; set; }
         public PianoKeyTypeEnum PianoKeyType { get; set; }
@@ -21,25 +21,25 @@ namespace PianoChordGenerator.Domain.Models
             string keyType;
             string chartId;
 
-            if(PianoKeyType==PianoKeyTypeEnum.WhiteKey)
+            if (PianoKeyType == PianoKeyTypeEnum.WhiteKey)
             {
-                keyType = "WhiteKey"+PianoKeyId;
-            } 
+                keyType = "WhiteKey" + PianoKeyId;
+            }
             else
             {
-                keyType = "BlackKey"+PianoKeyId;
+                keyType = "BlackKey" + PianoKeyId;
             }
 
             chartId = "ChartID" + ChartId;
 
-            return chartId+keyType;
+            return chartId + keyType;
         }
 
         public string GenerateHeaderFriendlyId()
         {
-            return "ChartID"+ChartId + "Header";
+            return "ChartID" + ChartId + "Header";
         }
 
     }
-  }
+}
 

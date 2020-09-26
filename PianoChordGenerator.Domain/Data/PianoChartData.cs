@@ -8,12 +8,12 @@ namespace PianoChordGenerator.Domain
 {
     public class PianoChartData
     {
-        public List<PianoRenderModel> ChartList { get; set; }
+        public List<PianoChartRenderModel> ChartList { get; set; }
 
         public PianoChartData()
         {
-            ChartList = new List<PianoRenderModel>();
-            PianoRenderModel ChartItem;
+            ChartList = new List<PianoChartRenderModel>();
+            PianoChartRenderModel ChartItem;
 
             const string xHeaderLeftChart = "33.550846";
             const string xHeaderRightChart = "408.3858";
@@ -87,7 +87,7 @@ namespace PianoChordGenerator.Domain
 
             #region "Chart 1 Left"
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1",
                 PianoObject = PianoObjectTypeEnum.HeaderText,
@@ -98,7 +98,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1", PianoKeyId = "1",
                 PianoObject = PianoObjectTypeEnum.PianoKey,  
@@ -108,7 +108,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1",PianoKeyId = "2",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -119,7 +119,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1",PianoKeyId = "3",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -130,7 +130,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1", PianoKeyId = "4",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -140,7 +140,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1",PianoKeyId = "5",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -151,7 +151,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1",PianoKeyId = "6",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -161,7 +161,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1",PianoKeyId = "7",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -172,7 +172,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1",PianoKeyId = "8",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -182,7 +182,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1", PianoKeyId = "9",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -192,7 +192,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1", PianoKeyId = "10",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -202,7 +202,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1", PianoKeyId = "11",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -212,7 +212,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1",
                 PianoKeyId = "12",
@@ -223,7 +223,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1", PianoKeyId = "13",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -233,7 +233,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1", PianoKeyId = "14",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -244,7 +244,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1", PianoKeyId = "1",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -254,7 +254,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1", PianoKeyId = "2",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -265,7 +265,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1", PianoKeyId = "3",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -276,7 +276,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1",PianoKeyId = "4",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -287,7 +287,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1",PianoKeyId = "5",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
@@ -299,7 +299,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1",
                 PianoKeyId = "6",
@@ -311,7 +311,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1",
                 PianoKeyId = "7",
@@ -323,7 +323,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1",
                 PianoKeyId = "8",
@@ -335,7 +335,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1",
                 PianoKeyId = "9",
@@ -347,7 +347,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "1",
                 PianoKeyId = "10",
@@ -363,7 +363,7 @@ namespace PianoChordGenerator.Domain
 
             #region "Chart 2 Right"           
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoObject = PianoObjectTypeEnum.HeaderText,
@@ -374,7 +374,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "1",
@@ -386,7 +386,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "2",
@@ -398,7 +398,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "3",
@@ -410,7 +410,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "4",
@@ -422,7 +422,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "5",
@@ -434,7 +434,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "6",
@@ -446,7 +446,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "7",
@@ -458,7 +458,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "8",
@@ -470,7 +470,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "9",
@@ -482,7 +482,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "10",
@@ -494,7 +494,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "11",
@@ -506,7 +506,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "12",
@@ -518,7 +518,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "13",
@@ -530,7 +530,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "14",
@@ -543,7 +543,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "1",
@@ -555,7 +555,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "2",
@@ -567,7 +567,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "3",
@@ -579,7 +579,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "4",
@@ -591,7 +591,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "5",
@@ -604,7 +604,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "6",
@@ -616,7 +616,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "7",
@@ -628,7 +628,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "8",
@@ -640,7 +640,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "9",
@@ -652,7 +652,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "10",
@@ -668,7 +668,7 @@ namespace PianoChordGenerator.Domain
 
             #region "Chart 3 Left"
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoObject = PianoObjectTypeEnum.HeaderText,
@@ -679,7 +679,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "1",
@@ -691,7 +691,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "2",
@@ -703,7 +703,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "3",
@@ -715,7 +715,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "4",
@@ -727,7 +727,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "5",
@@ -739,7 +739,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "6",
@@ -751,7 +751,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "7",
@@ -763,7 +763,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "8",
@@ -775,7 +775,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "9",
@@ -787,7 +787,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "10",
@@ -799,7 +799,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "11",
@@ -811,7 +811,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "12",
@@ -823,7 +823,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "13",
@@ -835,7 +835,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "14",
@@ -848,7 +848,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "1",
@@ -860,7 +860,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "2",
@@ -872,7 +872,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "3",
@@ -884,7 +884,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "4",
@@ -896,7 +896,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "5",
@@ -909,7 +909,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "6",
@@ -921,7 +921,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "7",
@@ -933,7 +933,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "8",
@@ -945,7 +945,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "9",
@@ -957,7 +957,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
                 PianoKeyId = "10",
@@ -972,7 +972,7 @@ namespace PianoChordGenerator.Domain
             #endregion
 
             #region "Chart 4 Right"
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoObject = PianoObjectTypeEnum.HeaderText,
@@ -983,7 +983,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "1",
@@ -995,7 +995,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "2",
@@ -1007,7 +1007,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
                 PianoKeyId = "3",
@@ -1019,7 +1019,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "4",
@@ -1031,7 +1031,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "5",
@@ -1043,7 +1043,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "6",
@@ -1055,7 +1055,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "7",
@@ -1067,7 +1067,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "8",
@@ -1079,7 +1079,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "9",
@@ -1091,7 +1091,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "10",
@@ -1103,7 +1103,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "11",
@@ -1115,7 +1115,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "12",
@@ -1127,7 +1127,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "13",
@@ -1139,7 +1139,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "14",
@@ -1152,7 +1152,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "1",
@@ -1164,7 +1164,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "2",
@@ -1176,7 +1176,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "3",
@@ -1188,7 +1188,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "4",
@@ -1200,7 +1200,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "5",
@@ -1213,7 +1213,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "6",
@@ -1225,7 +1225,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "7",
@@ -1237,7 +1237,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "8",
@@ -1249,7 +1249,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "9",
@@ -1261,7 +1261,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
                 PianoKeyId = "10",
@@ -1276,7 +1276,7 @@ namespace PianoChordGenerator.Domain
 
             #region "Chart 5 Left"
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoObject = PianoObjectTypeEnum.HeaderText,
@@ -1287,7 +1287,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "1",
@@ -1299,7 +1299,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "2",
@@ -1311,7 +1311,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "3",
@@ -1323,7 +1323,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "4",
@@ -1335,7 +1335,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "5",
@@ -1347,7 +1347,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "6",
@@ -1359,7 +1359,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "7",
@@ -1371,7 +1371,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "8",
@@ -1383,7 +1383,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "9",
@@ -1395,7 +1395,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "10",
@@ -1407,7 +1407,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "11",
@@ -1419,7 +1419,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "12",
@@ -1431,7 +1431,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "13",
@@ -1443,7 +1443,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "14",
@@ -1456,7 +1456,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "1",
@@ -1468,7 +1468,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "2",
@@ -1480,7 +1480,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "3",
@@ -1492,7 +1492,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "4",
@@ -1504,7 +1504,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "5",
@@ -1517,7 +1517,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "6",
@@ -1529,7 +1529,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "7",
@@ -1541,7 +1541,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "8",
@@ -1553,7 +1553,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "9",
@@ -1565,7 +1565,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "5",
                 PianoKeyId = "10",
@@ -1580,7 +1580,7 @@ namespace PianoChordGenerator.Domain
             #endregion
 
             #region "Chart 6 Right"
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoObject = PianoObjectTypeEnum.HeaderText,
@@ -1591,7 +1591,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "1",
@@ -1603,7 +1603,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "2",
@@ -1615,7 +1615,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "3",
@@ -1627,7 +1627,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "4",
@@ -1639,7 +1639,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "5",
@@ -1651,7 +1651,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "6",
@@ -1663,7 +1663,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "7",
@@ -1675,7 +1675,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "8",
@@ -1687,7 +1687,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "9",
@@ -1699,7 +1699,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "10",
@@ -1711,7 +1711,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "11",
@@ -1723,7 +1723,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "12",
@@ -1735,7 +1735,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "13",
@@ -1747,7 +1747,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "14",
@@ -1760,7 +1760,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "1",
@@ -1772,7 +1772,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "2",
@@ -1784,7 +1784,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "3",
@@ -1796,7 +1796,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "4",
@@ -1808,7 +1808,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "5",
@@ -1821,7 +1821,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "6",
@@ -1833,7 +1833,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "7",
@@ -1845,7 +1845,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "8",
@@ -1857,7 +1857,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "9",
@@ -1869,7 +1869,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "6",
                 PianoKeyId = "10",
@@ -1884,7 +1884,7 @@ namespace PianoChordGenerator.Domain
 
             #region "Chart 7 Left"
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoObject = PianoObjectTypeEnum.HeaderText,
@@ -1895,7 +1895,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "1",
@@ -1907,7 +1907,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "2",
@@ -1919,7 +1919,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "3",
@@ -1931,7 +1931,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "4",
@@ -1943,7 +1943,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "5",
@@ -1955,7 +1955,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "6",
@@ -1967,7 +1967,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "7",
@@ -1979,7 +1979,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "8",
@@ -1991,7 +1991,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "9",
@@ -2003,7 +2003,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "10",
@@ -2015,7 +2015,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "11",
@@ -2027,7 +2027,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "12",
@@ -2039,7 +2039,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "13",
@@ -2051,7 +2051,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "14",
@@ -2064,7 +2064,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "1",
@@ -2076,7 +2076,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "2",
@@ -2088,7 +2088,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "3",
@@ -2100,7 +2100,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "4",
@@ -2112,7 +2112,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "5",
@@ -2125,7 +2125,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "6",
@@ -2137,7 +2137,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "7",
@@ -2149,7 +2149,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "8",
@@ -2161,7 +2161,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "9",
@@ -2173,7 +2173,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "7",
                 PianoKeyId = "10",
@@ -2189,7 +2189,7 @@ namespace PianoChordGenerator.Domain
 
             #region "Chart 8 Right"           
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoObject = PianoObjectTypeEnum.HeaderText,
@@ -2200,7 +2200,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "1",
@@ -2212,7 +2212,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "2",
@@ -2224,7 +2224,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "3",
@@ -2236,7 +2236,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "4",
@@ -2248,7 +2248,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "5",
@@ -2260,7 +2260,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "6",
@@ -2272,7 +2272,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "7",
@@ -2284,7 +2284,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "8",
@@ -2296,7 +2296,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "9",
@@ -2308,7 +2308,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "10",
@@ -2320,7 +2320,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "11",
@@ -2332,7 +2332,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "12",
@@ -2344,7 +2344,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "13",
@@ -2356,7 +2356,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "14",
@@ -2369,7 +2369,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "1",
@@ -2381,7 +2381,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "2",
@@ -2393,7 +2393,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "3",
@@ -2405,7 +2405,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "4",
@@ -2417,7 +2417,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "5",
@@ -2430,7 +2430,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "6",
@@ -2442,7 +2442,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "7",
@@ -2454,7 +2454,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "8",
@@ -2466,7 +2466,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "9",
@@ -2478,7 +2478,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "8",
                 PianoKeyId = "10",
@@ -2494,7 +2494,7 @@ namespace PianoChordGenerator.Domain
 
             #region "Chart 9 Left"
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoObject = PianoObjectTypeEnum.HeaderText,
@@ -2505,7 +2505,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "1",
@@ -2517,7 +2517,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "2",
@@ -2529,7 +2529,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "3",
@@ -2541,7 +2541,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "4",
@@ -2553,7 +2553,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "5",
@@ -2565,7 +2565,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "6",
@@ -2577,7 +2577,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "7",
@@ -2589,7 +2589,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "8",
@@ -2601,7 +2601,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "9",
@@ -2613,7 +2613,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "10",
@@ -2625,7 +2625,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "11",
@@ -2637,7 +2637,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "12",
@@ -2649,7 +2649,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "13",
@@ -2661,7 +2661,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "14",
@@ -2674,7 +2674,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "1",
@@ -2686,7 +2686,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "2",
@@ -2698,7 +2698,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "3",
@@ -2710,7 +2710,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "4",
@@ -2722,7 +2722,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "5",
@@ -2735,7 +2735,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "6",
@@ -2747,7 +2747,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "7",
@@ -2759,7 +2759,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "8",
@@ -2771,7 +2771,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "9",
@@ -2783,7 +2783,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "9",
                 PianoKeyId = "10",
@@ -2799,7 +2799,7 @@ namespace PianoChordGenerator.Domain
 
             #region "Chart 10 Right"           
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoObject = PianoObjectTypeEnum.HeaderText,
@@ -2810,7 +2810,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "1",
@@ -2822,7 +2822,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "2",
@@ -2834,7 +2834,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "3",
@@ -2846,7 +2846,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "4",
@@ -2858,7 +2858,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "5",
@@ -2870,7 +2870,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "6",
@@ -2882,7 +2882,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "7",
@@ -2894,7 +2894,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "8",
@@ -2906,7 +2906,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "9",
@@ -2918,7 +2918,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "10",
@@ -2930,7 +2930,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "11",
@@ -2942,7 +2942,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "12",
@@ -2954,7 +2954,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "13",
@@ -2966,7 +2966,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "14",
@@ -2979,7 +2979,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "1",
@@ -2991,7 +2991,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "2",
@@ -3003,7 +3003,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "3",
@@ -3015,7 +3015,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "4",
@@ -3027,7 +3027,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "5",
@@ -3040,7 +3040,7 @@ namespace PianoChordGenerator.Domain
             ChartList.Add(ChartItem);
 
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "6",
@@ -3052,7 +3052,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "7",
@@ -3064,7 +3064,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "8",
@@ -3076,7 +3076,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "9",
@@ -3088,7 +3088,7 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
-            ChartItem = new PianoRenderModel
+            ChartItem = new PianoChartRenderModel
             {
                 ChartId = "10",
                 PianoKeyId = "10",
