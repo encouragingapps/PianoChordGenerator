@@ -19,11 +19,15 @@ namespace PianoChordGenerator.WinUI
 
             PianoKeyDrawing draw = new PianoKeyDrawing();
                      
-            pictureBox1.Image = draw.DrawChord(pictureBox1.Height, pictureBox1.Width);
+            pictureBox1.Image = draw.DrawKeyboardAndChord(pictureBox1.Height, pictureBox1.Width);
+            pictureBox2.Image = pictureBox1.Image;
+            pictureBox3.Image = pictureBox1.Image;
 
         }
 
-      
-
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            
+        }
     }
 }
