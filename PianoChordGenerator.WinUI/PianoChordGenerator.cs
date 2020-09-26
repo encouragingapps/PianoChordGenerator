@@ -17,7 +17,7 @@ namespace PianoChordGenerator.WinUI
         {
             InitializeComponent();
 
-            PianoKeyDrawing draw = new PianoKeyDrawing();
+            PianoKeyDrawing draw = new PianoKeyDrawing(Domain.Enums.ChordsEnum.C_Major_Root);
                      
             pictureBox1.Image = draw.DrawKeyboardAndChord(pictureBox1.Height, pictureBox1.Width);
             pictureBox2.Image = pictureBox1.Image;

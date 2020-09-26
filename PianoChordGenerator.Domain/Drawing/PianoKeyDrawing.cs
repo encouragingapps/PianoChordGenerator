@@ -2,89 +2,219 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
-
-
+using PianoChordGenerator.Domain.Enums;
+using PianoChordGenerator.Domain.Models;
 
 namespace PianoChordGenerator.Domain.Drawing
 {
-    public class PianoKeyDrawing
+    public class PianoKeyDrawing : IDisposable
     {
+
+        public ChordsEnum SelectedChordEnum { get; set; }
+        public bool SetNoIndicators { get; set; }
+        public PianoKeyChordSelectionModel KeySelection { get; set; }
+
+        public PianoKeyDrawing(ChordsEnum chord)
+        {
+            SelectedChordEnum = chord;
+            KeySelection = new PianoKeyChordSelectionModel(SelectedChordEnum);
+            SetNoIndicators = false;
+        }
+
+        public PianoKeyDrawing()
+        {
+            SetNoIndicators = true;
+        }
+
+       
         public Bitmap DrawKeyboardAndChord(int height, int width)
         {
             const int BLACK_KEY_HEIGHT = 43;
             const int BLACK_KEY_WIDTH = 15;
             const int WHITE_KEY_HEIGHT = 75;
             const int WHITE_KEY_WIDTH = 20;
+            const int INDICATOR_HEIGHT = 15;
+            const int INDICATOR_WIDTH = 15;
 
             Bitmap bmp = new Bitmap(width, height);
             using Graphics g = Graphics.FromImage(bmp);
-            //g.DrawLine(new Pen(Color.Red), 0, 0, 100, 100);
 
-            // Create solid brush.
-            SolidBrush blackBrush = new SolidBrush(Color.Black);
+            #region "Setup Art Tools"
+                // Create solid brush.
+                SolidBrush blackBrush = new SolidBrush(Color.Black);
+                SolidBrush greenBrush = new SolidBrush(Color.Green);
+          
+                // Create pen.
+                Pen blackPen = new Pen(Color.Black, 3);
+            #endregion
 
-            // Create black keys
-            Rectangle blackkey1 = new Rectangle(12, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT);
-            Rectangle blackkey2 = new Rectangle(34, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT);
-            Rectangle blackkey3 = new Rectangle(72, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT);
-            Rectangle blackkey4 = new Rectangle(92, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT);
-            Rectangle blackkey5 = new Rectangle(112, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT);
-            Rectangle blackkey6 = new Rectangle(154, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT);
-            Rectangle blackkey7 = new Rectangle(174, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT);
-            Rectangle blackkey8 = new Rectangle(214, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT);
-            Rectangle blackkey9 = new Rectangle(234, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT);
-            Rectangle blackkey10 = new Rectangle(254, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT);
+            #region "Draw White Keys"
+                // Draw white keys          
+                g.DrawRectangle(blackPen, new Rectangle(0, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT));                            
+                g.DrawRectangle(blackPen, new Rectangle(20, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT));
+                g.DrawRectangle(blackPen, new Rectangle(40, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT));
+                g.DrawRectangle(blackPen, new Rectangle(60, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT));
+                g.DrawRectangle(blackPen, new Rectangle(80, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT));
+                g.DrawRectangle(blackPen, new Rectangle(100, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT));
+                g.DrawRectangle(blackPen, new Rectangle(120, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT));
+                g.DrawRectangle(blackPen, new Rectangle(140, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT));
+                g.DrawRectangle(blackPen, new Rectangle(160, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT));
+                g.DrawRectangle(blackPen, new Rectangle(180, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT));
+                g.DrawRectangle(blackPen, new Rectangle(200, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT));
+                g.DrawRectangle(blackPen, new Rectangle(220, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT));
+                g.DrawRectangle(blackPen, new Rectangle(240, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT));
+                g.DrawRectangle(blackPen, new Rectangle(260, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT));
+            #endregion
 
+            #region "Draw Black Keys"
+                // Draw black keys
+                g.FillRectangle(blackBrush, new Rectangle(12, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT));
+                g.FillRectangle(blackBrush, new Rectangle(34, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT));
+                g.FillRectangle(blackBrush, new Rectangle(72, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT));
+                g.FillRectangle(blackBrush, new Rectangle(92, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT));
+                g.FillRectangle(blackBrush, new Rectangle(112, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT));
+                g.FillRectangle(blackBrush, new Rectangle(154, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT));
+                g.FillRectangle(blackBrush, new Rectangle(174, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT));
+                g.FillRectangle(blackBrush, new Rectangle(214, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT));
+                g.FillRectangle(blackBrush, new Rectangle(234, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT));
+                g.FillRectangle(blackBrush, new Rectangle(254, 0, BLACK_KEY_WIDTH, BLACK_KEY_HEIGHT));
+            #endregion
 
-            // Create pen.
-            Pen blackPen = new Pen(Color.Black, 3);
+            #region "Draw Whitekey Indicators"
+                //Draw whitekey indicators
+                if (KeySelection.IsSelectedPianoWhite1KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(2, 50, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
 
-            // Create white keys
-            Rectangle whitekey1 = new Rectangle(0, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT);
-            Rectangle whitekey2 = new Rectangle(20, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT);
-            Rectangle whitekey3 = new Rectangle(40, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT);
-            Rectangle whitekey4 = new Rectangle(60, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT);
-            Rectangle whitekey5 = new Rectangle(80, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT);
-            Rectangle whitekey6 = new Rectangle(100, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT);
-            Rectangle whitekey7 = new Rectangle(120, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT);
-            Rectangle whitekey8 = new Rectangle(140, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT);
-            Rectangle whitekey9 = new Rectangle(160, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT);
-            Rectangle whitekey10 = new Rectangle(180, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT);
-            Rectangle whitekey11 = new Rectangle(200, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT);
-            Rectangle whitekey12 = new Rectangle(220, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT);
-            Rectangle whitekey13 = new Rectangle(240, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT);
-            Rectangle whitekey14 = new Rectangle(260, 0, WHITE_KEY_WIDTH, WHITE_KEY_HEIGHT);
+                if (KeySelection.IsSelectedPianoWhite2KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(23, 50, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
 
-            // Draw white keys
-            g.DrawRectangle(blackPen, whitekey1);
-            g.DrawRectangle(blackPen, whitekey2);
-            g.DrawRectangle(blackPen, whitekey3);
-            g.DrawRectangle(blackPen, whitekey4);
-            g.DrawRectangle(blackPen, whitekey5);
-            g.DrawRectangle(blackPen, whitekey6);
-            g.DrawRectangle(blackPen, whitekey7);
-            g.DrawRectangle(blackPen, whitekey8);
-            g.DrawRectangle(blackPen, whitekey9);
-            g.DrawRectangle(blackPen, whitekey10);
-            g.DrawRectangle(blackPen, whitekey11);
-            g.DrawRectangle(blackPen, whitekey12);
-            g.DrawRectangle(blackPen, whitekey13);
-            g.DrawRectangle(blackPen, whitekey14);
+                if (KeySelection.IsSelectedPianoWhite3KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(43, 50, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
 
-            // Draw black keys
-            g.FillRectangle(blackBrush, blackkey1);
-            g.FillRectangle(blackBrush, blackkey2);
-            g.FillRectangle(blackBrush, blackkey3);
-            g.FillRectangle(blackBrush, blackkey4);
-            g.FillRectangle(blackBrush, blackkey5);
-            g.FillRectangle(blackBrush, blackkey6);
-            g.FillRectangle(blackBrush, blackkey7);
-            g.FillRectangle(blackBrush, blackkey8);
-            g.FillRectangle(blackBrush, blackkey9);
-            g.FillRectangle(blackBrush, blackkey10);
+                if (KeySelection.IsSelectedPianoWhite4KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(63, 50, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoWhite5KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(83, 50, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoWhite6KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(103, 50, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoWhite7KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(123, 50, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoWhite8KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(143, 50, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoWhite9KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(163, 50, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoWhite10KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(183, 50, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoWhite11KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(203, 50, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoWhite12KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(223, 50, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoWhite13KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(243, 50, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoWhite14KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(263, 50, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+            #endregion
+
+            #region "Draw Blackkey Indicators"
+                //Draw blackey indicators
+                if (KeySelection.IsSelectedPianoBlack1KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(12, 20, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoBlack2KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(34, 20, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoBlack3KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(72, 20, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoBlack4KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(92, 20, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoBlack5KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(112, 20, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoBlack6KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(154, 20, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoBlack7KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(174, 20, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoBlack8KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(214, 20, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoBlack9KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(234, 20, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+
+                if (KeySelection.IsSelectedPianoBlack10KeyId && !SetNoIndicators)
+                {
+                    g.FillEllipse(greenBrush, new Rectangle(254, 20, INDICATOR_WIDTH, INDICATOR_HEIGHT));
+                }
+            #endregion
 
             return bmp;
         }
-     
+
+        public void Dispose()
+        {
+            // Dispose of unmanaged resources.
+            
+            // Suppress finalization.
+            GC.SuppressFinalize(this);
+        }
     }
 }
