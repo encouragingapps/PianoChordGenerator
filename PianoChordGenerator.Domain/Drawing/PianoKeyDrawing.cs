@@ -13,21 +13,12 @@ namespace PianoChordGenerator.Domain.Drawing
         public ChordsEnum SelectedChordEnum { get; set; }
         public bool SetNoIndicators { get; set; }
         public PianoKeyChordSelectionModel KeySelection { get; set; }
-
-        public PianoKeyDrawing(ChordsEnum chord)
-        {
-            SelectedChordEnum = chord;
-            KeySelection = new PianoKeyChordSelectionModel(SelectedChordEnum);
-            SetNoIndicators = false;
-        }
-
-        public PianoKeyDrawing()
-        {
-            SetNoIndicators = true;
-        }
-
+           
        
-        public Bitmap DrawKeyboardAndChord(int height, int width)
+        public Bitmap DrawKeyboardAndChord(ChordsEnum chord, 
+                                           bool clearIndicators, 
+                                           int height, 
+                                           int width)
         {
             const int BLACK_KEY_HEIGHT = 43;
             const int BLACK_KEY_WIDTH = 15;
@@ -35,6 +26,10 @@ namespace PianoChordGenerator.Domain.Drawing
             const int WHITE_KEY_WIDTH = 20;
             const int INDICATOR_HEIGHT = 15;
             const int INDICATOR_WIDTH = 15;
+
+            SelectedChordEnum = chord;
+            KeySelection = new PianoKeyChordSelectionModel(SelectedChordEnum);
+            SetNoIndicators = clearIndicators;
 
             Bitmap bmp = new Bitmap(width, height);
             using Graphics g = Graphics.FromImage(bmp);

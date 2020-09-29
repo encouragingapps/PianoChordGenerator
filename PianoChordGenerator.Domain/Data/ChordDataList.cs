@@ -16,6 +16,7 @@ namespace PianoChordGenerator.Domain.Data
             List<KeyValuePair<string, string>> data = new List<KeyValuePair<string, string>>();
 
             // Add data to the List
+            data.Add(new KeyValuePair<string, string>("none", String.Empty));
             data.Add(new KeyValuePair<string, string>("cmaj", "C Major"));
             data.Add(new KeyValuePair<string, string>("csharpmaj", "C# Major"));
 
