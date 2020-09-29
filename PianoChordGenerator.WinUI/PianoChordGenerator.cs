@@ -17,6 +17,8 @@ namespace PianoChordGenerator.WinUI
     {
         private Logic logic = new Logic();
         private PianoKeyDrawing draw = new PianoKeyDrawing();
+        private const int IMAGE_HEIGHT = 108;
+        private const int IMAGE_WIDTH = 302;
 
         public frmPianoChordGenerator()
         {
@@ -37,8 +39,8 @@ namespace PianoChordGenerator.WinUI
         private void ClearIndicators()
         {
             picRootPosition.Image = draw.DrawKeyboardAndChord(ChordsEnum.None, true,
-                                                          picRootPosition.Height,
-                                                          picRootPosition.Width);
+                                                          IMAGE_HEIGHT,
+                                                          IMAGE_WIDTH);
 
             picFirstInversion.Image = picRootPosition.Image;
             picSecondInversion.Image = picRootPosition.Image;
@@ -72,20 +74,36 @@ namespace PianoChordGenerator.WinUI
                     ClearIndicators();
                     break;
                 case "cmaj":
-                    picRootPosition.Image = draw.DrawKeyboardAndChord(ChordsEnum.C_Major_Root, false,
-                                                          picRootPosition.Height,
-                                                          picRootPosition.Width);
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.C_Major_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.C_Major_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.C_Major_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
 
-                    picFirstInversion.Image = draw.DrawKeyboardAndChord(ChordsEnum.C_Major_1st, false,
-                                                          picRootPosition.Height,
-                                                          picRootPosition.Width);
-
-                    picSecondInversion.Image = draw.DrawKeyboardAndChord(ChordsEnum.C_Major_2nd, false,
-                                                          picRootPosition.Height,
-                                                          picRootPosition.Width);
-
-                    break;                              
+                    break;
+                case "csharpmaj":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.C_Sharp_Major_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.C_Sharp_Major_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.C_Sharp_Major_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
             }
+        }
+
+        private void SetChordImages(Bitmap RootChord, Bitmap FirstInversion, Bitmap SecondInversion)
+        {
+            picRootPosition.Image = RootChord;
+            picFirstInversion.Image = FirstInversion;
+            picSecondInversion.Image = SecondInversion;
         }
 
     }

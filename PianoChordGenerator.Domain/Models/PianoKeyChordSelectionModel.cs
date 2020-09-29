@@ -59,7 +59,22 @@ namespace PianoChordGenerator.Domain.Models
                     IsSelectedPianoWhite5KeyId = true;
                     IsSelectedPianoWhite8KeyId = true;
                     IsSelectedPianoWhite10KeyId = true;
-                    break;                
+                    break;
+                case ChordsEnum.C_Sharp_Major_Root:
+                    IsSelectedPianoBlack1KeyId = true;
+                    IsSelectedPianoWhite4KeyId = true;
+                    IsSelectedPianoBlack4KeyId = true;
+                    break;
+                case ChordsEnum.C_Sharp_Major_1st:
+                    IsSelectedPianoWhite4KeyId = true;
+                    IsSelectedPianoBlack4KeyId = true;
+                    IsSelectedPianoBlack6KeyId = true;
+                    break;
+                case ChordsEnum.C_Sharp_Major_2nd:
+                    IsSelectedPianoBlack4KeyId = true;
+                    IsSelectedPianoBlack6KeyId = true;
+                    IsSelectedPianoWhite11KeyId = true;
+                    break;
             }
         }
 
