@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
+using PianoChordGenerator.Domain.Data;
 using PianoChordGenerator.Domain.Enums;
 using PianoChordGenerator.Domain.Models;
 //https://www.c-sharpcorner.com/UploadFile/mahesh/create-xml-in-C-Sharp/
@@ -11,7 +13,16 @@ namespace PianoChordGenerator.Domain.Logic
 {
     public class Logic
     {
-                  
+        /// <summary>
+        /// Get a list of chords needed for the select chord drop down list
+        /// </summary>
+        /// <returns></returns>
+        public List<KeyValuePair<string, string>> GetListOfChords()   
+        {
+            var data = new ChordDataList();
+            return data.GetData();
+        }
+        
         public void GeneratePianoChart(PianoChartData pianoChartData)
         {
             

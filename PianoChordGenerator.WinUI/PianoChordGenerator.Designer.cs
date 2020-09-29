@@ -45,7 +45,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.lstSelectedChords = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboChordSelect = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabChordSheetGenerator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -79,7 +79,7 @@
             this.tabChordSheetGenerator.Controls.Add(this.button1);
             this.tabChordSheetGenerator.Controls.Add(this.lstSelectedChords);
             this.tabChordSheetGenerator.Controls.Add(this.label1);
-            this.tabChordSheetGenerator.Controls.Add(this.comboBox1);
+            this.tabChordSheetGenerator.Controls.Add(this.cboChordSelect);
             this.tabChordSheetGenerator.Location = new System.Drawing.Point(4, 37);
             this.tabChordSheetGenerator.Name = "tabChordSheetGenerator";
             this.tabChordSheetGenerator.Padding = new System.Windows.Forms.Padding(3);
@@ -220,13 +220,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Select a Chord:";
             // 
-            // comboBox1
+            // cboChordSelect
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(14, 32);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(365, 36);
-            this.comboBox1.TabIndex = 0;
+            this.cboChordSelect.FormattingEnabled = true;
+            this.cboChordSelect.Location = new System.Drawing.Point(14, 32);
+            this.cboChordSelect.Name = "cboChordSelect";
+            this.cboChordSelect.Size = new System.Drawing.Size(365, 36);
+            this.cboChordSelect.TabIndex = 0;
             // 
             // frmPianoChordGenerator
             // 
@@ -254,7 +254,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox lstSelectedChords;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboChordSelect;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label3;
