@@ -9,3 +9,4 @@ Chords are a foundational part of any song. The goal of this project is to creat
 
 * .Net Core 3.1
 * .Net Core 3.1 Windows Forms
+* Visual Studio 2019
