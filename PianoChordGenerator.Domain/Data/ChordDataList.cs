@@ -19,6 +19,22 @@ namespace PianoChordGenerator.Domain.Data
             data.Add(new KeyValuePair<string, string>("none", String.Empty));
             data.Add(new KeyValuePair<string, string>("cmaj", "C Major"));
             data.Add(new KeyValuePair<string, string>("csharpmaj", "C# Major"));
+            data.Add(new KeyValuePair<string, string>("dflatmaj", "Db Major"));
+            data.Add(new KeyValuePair<string, string>("dmaj", "D Major"));
+            data.Add(new KeyValuePair<string, string>("dsharpmaj", "D# Major"));
+            data.Add(new KeyValuePair<string, string>("eflatmaj", "Eb Major"));
+            data.Add(new KeyValuePair<string, string>("emaj", "E Major"));
+            data.Add(new KeyValuePair<string, string>("fmaj", "F Major"));
+            data.Add(new KeyValuePair<string, string>("fsharpmaj", "F# Major"));
+            data.Add(new KeyValuePair<string, string>("gflatmaj", "Gb Major"));
+            data.Add(new KeyValuePair<string, string>("gmaj", "G Major"));
+            data.Add(new KeyValuePair<string, string>("gsharpmaj", "G# Major"));
+            data.Add(new KeyValuePair<string, string>("aflatmaj", "Ab Major"));
+            data.Add(new KeyValuePair<string, string>("amaj", "A Major"));
+            data.Add(new KeyValuePair<string, string>("asharpmaj", "A# Major"));
+            data.Add(new KeyValuePair<string, string>("bflatmaj", "Bb Major"));
+            data.Add(new KeyValuePair<string, string>("bmaj", "B Major"));
+
 
             return data;
             

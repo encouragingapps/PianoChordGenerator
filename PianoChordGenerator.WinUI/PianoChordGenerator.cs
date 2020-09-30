@@ -96,6 +96,63 @@ namespace PianoChordGenerator.WinUI
                                    IMAGE_HEIGHT,
                                    IMAGE_WIDTH));
                     break;
+                case "dflatmaj":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.D_Flat_Major_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.D_Flat_Major_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.D_Flat_Major_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
+                case "dmaj":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.D_Major_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.D_Major_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.D_Major_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+
+                    break;
+                case "dsharpmaj":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.D_Sharp_Major_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.D_Sharp_Major_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.D_Sharp_Major_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
+                case "eflatmaj":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.E_Flat_Major_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.E_Flat_Major_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.E_Flat_Major_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
+                case "emaj":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.E_Major_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.E_Major_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.E_Major_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+
+                    break;
             }
         }
 
