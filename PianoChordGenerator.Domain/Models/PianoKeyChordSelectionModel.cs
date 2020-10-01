@@ -89,9 +89,9 @@ namespace PianoChordGenerator.Domain.Models
                     IsSelectedPianoWhite9KeyId = true;
                     break;
                 case ChordsEnum.D_Major_2nd:
-                    IsSelectedPianoWhite3KeyId = true;
                     IsSelectedPianoWhite6KeyId = true;
-                    IsSelectedPianoBlack6KeyId = true;
+                    IsSelectedPianoWhite9KeyId = true;
+                    IsSelectedPianoBlack8KeyId = true;
                     break;
                 case ChordsEnum.D_Sharp_Major_Root:
                 case ChordsEnum.E_Flat_Major_Root:
@@ -107,13 +107,13 @@ namespace PianoChordGenerator.Domain.Models
                     break;
                 case ChordsEnum.D_Sharp_Major_2nd:
                 case ChordsEnum.E_Flat_Major_2nd:
-                    IsSelectedPianoBlack3KeyId = true;
                     IsSelectedPianoBlack5KeyId = true;
-                    IsSelectedPianoWhite9KeyId = true;
+                    IsSelectedPianoBlack7KeyId = true;
+                    IsSelectedPianoWhite12KeyId = true;
                     break;
                 case ChordsEnum.E_Major_Root:
                     IsSelectedPianoWhite3KeyId = true;
-                    IsSelectedPianoBlack5KeyId = true;
+                    IsSelectedPianoBlack4KeyId = true;
                     IsSelectedPianoWhite7KeyId = true;
                     break;
                 case ChordsEnum.E_Major_1st:
@@ -122,9 +122,9 @@ namespace PianoChordGenerator.Domain.Models
                     IsSelectedPianoWhite10KeyId = true;
                     break;
                 case ChordsEnum.E_Major_2nd:
-                    IsSelectedPianoWhite4KeyId = true;
                     IsSelectedPianoWhite7KeyId = true;
-                    IsSelectedPianoBlack7KeyId = true;
+                    IsSelectedPianoWhite10KeyId = true;
+                    IsSelectedPianoBlack9KeyId = true;
                     break;
                 case ChordsEnum.F_Major_Root:
                     IsSelectedPianoWhite4KeyId = true;
@@ -137,9 +137,9 @@ namespace PianoChordGenerator.Domain.Models
                     IsSelectedPianoWhite11KeyId = true;
                     break;
                 case ChordsEnum.F_Major_2nd:
-                    IsSelectedPianoWhite5KeyId = true;
                     IsSelectedPianoWhite8KeyId = true;
-                    IsSelectedPianoBlack10KeyId = true;
+                    IsSelectedPianoWhite11KeyId = true;
+                    IsSelectedPianoWhite13KeyId = true;
                     break;
                 case ChordsEnum.F_Sharp_Major_Root:
                 case ChordsEnum.G_Flat_Major_Root:
@@ -149,15 +149,15 @@ namespace PianoChordGenerator.Domain.Models
                     break;
                 case ChordsEnum.F_Sharp_Major_1st:
                 case ChordsEnum.G_Flat_Major_1st:
-                    IsSelectedPianoBlack3KeyId = true;
-                    IsSelectedPianoBlack4KeyId = true;
+                    IsSelectedPianoBlack5KeyId = true;
                     IsSelectedPianoBlack6KeyId = true;
+                    IsSelectedPianoBlack8KeyId = true;
                     break;
                 case ChordsEnum.F_Sharp_Major_2nd:
                 case ChordsEnum.G_Flat_Major_2nd:
-                    IsSelectedPianoBlack4KeyId = true;
                     IsSelectedPianoBlack6KeyId = true;
-                    IsSelectedPianoWhite8KeyId = true;
+                    IsSelectedPianoBlack8KeyId = true;
+                    IsSelectedPianoBlack10KeyId = true;
                     break;
                 case ChordsEnum.G_Major_Root:
                     IsSelectedPianoWhite5KeyId = true;
@@ -165,80 +165,80 @@ namespace PianoChordGenerator.Domain.Models
                     IsSelectedPianoWhite9KeyId = true;
                     break;
                 case ChordsEnum.G_Major_1st:
-                    IsSelectedPianoWhite4KeyId = true;
-                    IsSelectedPianoWhite6KeyId = true;
+                    IsSelectedPianoWhite7KeyId = true;
                     IsSelectedPianoWhite9KeyId = true;
+                    IsSelectedPianoWhite12KeyId = true;
                     break;
                 case ChordsEnum.G_Major_2nd:
-                    IsSelectedPianoWhite6KeyId = true;
                     IsSelectedPianoWhite9KeyId = true;
-                    IsSelectedPianoWhite11KeyId = true;
+                    IsSelectedPianoWhite12KeyId = true;
+                    IsSelectedPianoWhite14KeyId = true;
                     break;
                 case ChordsEnum.G_Sharp_Major_Root:
                 case ChordsEnum.A_Flat_Major_Root:
-                    //IsSelectedPianoBlack3KeyId = true;
-                    //IsSelectedPianoBlack5KeyId = true;
-                    //IsSelectedPianoBlack6KeyId = true;
+                    IsSelectedPianoBlack4KeyId = true;
+                    IsSelectedPianoWhite8KeyId = true;
+                    IsSelectedPianoBlack7KeyId = true;
                     break;
                 case ChordsEnum.G_Sharp_Major_1st:
                 case ChordsEnum.A_Flat_Major_1st:
-                    //IsSelectedPianoBlack3KeyId = true;
-                    //IsSelectedPianoBlack4KeyId = true;
-                    //IsSelectedPianoBlack6KeyId = true;
+                    IsSelectedPianoWhite1KeyId = true;
+                    IsSelectedPianoBlack2KeyId = true;
+                    IsSelectedPianoBlack4KeyId = true;
                     break;
                 case ChordsEnum.G_Sharp_Major_2nd:
                 case ChordsEnum.A_Flat_Major_2nd:
-                    //IsSelectedPianoBlack4KeyId = true;
-                    //IsSelectedPianoBlack6KeyId = true;
-                    //IsSelectedPianoWhite8KeyId = true;
+                    IsSelectedPianoBlack2KeyId = true;
+                    IsSelectedPianoBlack4KeyId = true;
+                    IsSelectedPianoWhite8KeyId = true;
                     break;
                 case ChordsEnum.A_Major_Root:
-                    //IsSelectedPianoWhite5KeyId = true;
-                    //IsSelectedPianoWhite7KeyId = true;
-                    //IsSelectedPianoWhite9KeyId = true;
+                    IsSelectedPianoWhite6KeyId = true;
+                    IsSelectedPianoBlack6KeyId = true;
+                    IsSelectedPianoWhite10KeyId = true;
                     break;
                 case ChordsEnum.A_Major_1st:
-                    //IsSelectedPianoWhite4KeyId = true;
-                    //IsSelectedPianoWhite6KeyId = true;
-                    //IsSelectedPianoWhite9KeyId = true;
+                    IsSelectedPianoBlack1KeyId = true;
+                    IsSelectedPianoWhite3KeyId = true;
+                    IsSelectedPianoWhite6KeyId = true;
                     break;
                 case ChordsEnum.A_Major_2nd:
-                    //IsSelectedPianoWhite6KeyId = true;
-                    //IsSelectedPianoWhite9KeyId = true;
-                    //IsSelectedPianoWhite11KeyId = true;
+                    IsSelectedPianoWhite3KeyId = true;
+                    IsSelectedPianoWhite6KeyId = true;
+                    IsSelectedPianoBlack6KeyId = true;
                     break;
                 case ChordsEnum.A_Sharp_Major_Root:
                 case ChordsEnum.B_Flat_Major_Root:
-                    //IsSelectedPianoBlack3KeyId = true;
-                    //IsSelectedPianoBlack5KeyId = true;
-                    //IsSelectedPianoBlack6KeyId = true;
+                    IsSelectedPianoBlack5KeyId = true;
+                    IsSelectedPianoWhite9KeyId = true;
+                    IsSelectedPianoWhite11KeyId = true;
                     break;
                 case ChordsEnum.A_Sharp_Major_1st:
                 case ChordsEnum.B_Flat_Major_1st:
-                    //IsSelectedPianoBlack3KeyId = true;
-                    //IsSelectedPianoBlack4KeyId = true;
-                    //IsSelectedPianoBlack6KeyId = true;
+                    IsSelectedPianoWhite2KeyId = true;
+                    IsSelectedPianoWhite4KeyId = true;
+                    IsSelectedPianoBlack5KeyId = true;
                     break;
                 case ChordsEnum.A_Sharp_Major_2nd:
                 case ChordsEnum.B_Flat_Major_2nd:
-                    //IsSelectedPianoBlack4KeyId = true;
-                    //IsSelectedPianoBlack6KeyId = true;
-                    //IsSelectedPianoWhite8KeyId = true;
+                    IsSelectedPianoWhite4KeyId = true;
+                    IsSelectedPianoBlack5KeyId = true;
+                    IsSelectedPianoWhite9KeyId = true;
                     break;
                 case ChordsEnum.B_Major_Root:
-                    //IsSelectedPianoWhite5KeyId = true;
-                    //IsSelectedPianoWhite7KeyId = true;
-                    //IsSelectedPianoWhite9KeyId = true;
+                    IsSelectedPianoWhite7KeyId = true;
+                    IsSelectedPianoBlack7KeyId = true;
+                    IsSelectedPianoBlack8KeyId = true;
                     break;
                 case ChordsEnum.B_Major_1st:
-                    //IsSelectedPianoWhite4KeyId = true;
-                    //IsSelectedPianoWhite6KeyId = true;
-                    //IsSelectedPianoWhite9KeyId = true;
+                    IsSelectedPianoBlack2KeyId = true;
+                    IsSelectedPianoBlack3KeyId = true;
+                    IsSelectedPianoWhite7KeyId = true;
                     break;
                 case ChordsEnum.B_Major_2nd:
-                    //IsSelectedPianoWhite6KeyId = true;
-                    //IsSelectedPianoWhite9KeyId = true;
-                    //IsSelectedPianoWhite11KeyId = true;
+                    IsSelectedPianoBlack3KeyId = true;
+                    IsSelectedPianoWhite7KeyId = true;
+                    IsSelectedPianoBlack7KeyId = true;
                     break;
             }
         }
