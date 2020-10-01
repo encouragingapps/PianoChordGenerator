@@ -57,6 +57,9 @@ namespace PianoChordGenerator.Domain.Enums
         B_Flat_Major_2nd = 48,
         B_Major_Root = 49,
         B_Major_1st = 50,
-        B_Major_2nd = 51
+        B_Major_2nd = 51,
+        C_Minor_Root = 52,
+        C_Minor_1st = 53,
+        C_Minor_2nd = 54
     }
 }

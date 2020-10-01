@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPianoChordGenerator));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabChordSheetGenerator = new System.Windows.Forms.TabPage();
+            this.btnGenerateChordSheet = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lstSelectedChords = new System.Windows.Forms.ListBox();
             this.lblChordsToExport = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cboChordSelect = new System.Windows.Forms.ComboBox();
-            this.btnGenerateChordSheet = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabChordSheetGenerator.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -87,6 +87,17 @@
             this.tabChordSheetGenerator.TabIndex = 0;
             this.tabChordSheetGenerator.Text = "Chord Sheet Generator";
             this.tabChordSheetGenerator.UseVisualStyleBackColor = true;
+            // 
+            // btnGenerateChordSheet
+            // 
+            this.btnGenerateChordSheet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnGenerateChordSheet.Font = new System.Drawing.Font("Footlight MT Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnGenerateChordSheet.Location = new System.Drawing.Point(14, 594);
+            this.btnGenerateChordSheet.Name = "btnGenerateChordSheet";
+            this.btnGenerateChordSheet.Size = new System.Drawing.Size(853, 51);
+            this.btnGenerateChordSheet.TabIndex = 3;
+            this.btnGenerateChordSheet.Text = "Generate Chord Sheet";
+            this.btnGenerateChordSheet.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 
@@ -231,11 +242,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bell MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(14, 95);
+            this.label3.Location = new System.Drawing.Point(14, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(183, 24);
+            this.label3.Size = new System.Drawing.Size(175, 24);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Select an Inversion:";
+            this.label3.Text = "Select a Fingering:";
             // 
             // button1
             // 
@@ -264,17 +275,6 @@
             this.cboChordSelect.Size = new System.Drawing.Size(365, 36);
             this.cboChordSelect.TabIndex = 0;
             this.cboChordSelect.SelectedIndexChanged += new System.EventHandler(this.cboChordSelect_SelectedIndexChanged);
-            // 
-            // btnGenerateChordSheet
-            // 
-            this.btnGenerateChordSheet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnGenerateChordSheet.Font = new System.Drawing.Font("Footlight MT Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnGenerateChordSheet.Location = new System.Drawing.Point(14, 594);
-            this.btnGenerateChordSheet.Name = "btnGenerateChordSheet";
-            this.btnGenerateChordSheet.Size = new System.Drawing.Size(853, 51);
-            this.btnGenerateChordSheet.TabIndex = 3;
-            this.btnGenerateChordSheet.Text = "Generate Chord Sheet";
-            this.btnGenerateChordSheet.UseVisualStyleBackColor = false;
             // 
             // frmPianoChordGenerator
             // 

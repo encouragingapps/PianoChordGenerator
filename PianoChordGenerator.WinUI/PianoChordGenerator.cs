@@ -96,6 +96,17 @@ namespace PianoChordGenerator.WinUI
                                    IMAGE_HEIGHT,
                                    IMAGE_WIDTH));
                     break;
+                case "cmin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.C_Minor_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.C_Minor_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.C_Minor_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
                 case "dflatmaj":
                     SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.D_Flat_Major_Root, false,
                                    IMAGE_HEIGHT,
