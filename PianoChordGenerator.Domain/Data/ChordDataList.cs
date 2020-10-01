@@ -36,6 +36,23 @@ namespace PianoChordGenerator.Domain.Data
             data.Add(new KeyValuePair<string, string>("bmaj", "B Major"));
             data.Add(new KeyValuePair<string, string>("min", "Minor Chords"));
             data.Add(new KeyValuePair<string, string>("cmin", "C Minor"));
+            data.Add(new KeyValuePair<string, string>("csharpmin", "C# Minor"));
+            data.Add(new KeyValuePair<string, string>("dflatmin", "Db Minor"));
+            data.Add(new KeyValuePair<string, string>("dmin", "D Minor"));
+            data.Add(new KeyValuePair<string, string>("dsharpmin", "D# Minor"));
+            data.Add(new KeyValuePair<string, string>("eflatmin", "Eb Minor"));
+            data.Add(new KeyValuePair<string, string>("emin", "E Minor"));
+            data.Add(new KeyValuePair<string, string>("fmin", "F Minor"));
+            data.Add(new KeyValuePair<string, string>("fsharpmin", "F# Minor"));
+            data.Add(new KeyValuePair<string, string>("gflatmin", "Gb Minor"));
+            data.Add(new KeyValuePair<string, string>("gmin", "G MMinorajor"));
+            data.Add(new KeyValuePair<string, string>("gsharpmin", "G# Minor"));
+            data.Add(new KeyValuePair<string, string>("aflatmin", "Ab Minor"));
+            data.Add(new KeyValuePair<string, string>("amin", "A Minor"));
+            data.Add(new KeyValuePair<string, string>("asharpmin", "A# Minor"));
+            data.Add(new KeyValuePair<string, string>("bflatmin", "Bb Minor"));
+            data.Add(new KeyValuePair<string, string>("bmin", "B Minor"));
+
 
 
             return data;

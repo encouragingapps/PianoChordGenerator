@@ -244,9 +244,9 @@
             this.label3.Font = new System.Drawing.Font("Bell MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(14, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(175, 24);
+            this.label3.Size = new System.Drawing.Size(231, 24);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Select a Fingering:";
+            this.label3.Text = "Select a Chord Inversion:";
             // 
             // button1
             // 

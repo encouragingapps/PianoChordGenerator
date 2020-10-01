@@ -95,18 +95,7 @@ namespace PianoChordGenerator.WinUI
                                    draw.DrawKeyboardAndChord(ChordsEnum.C_Sharp_Major_2nd, false,
                                    IMAGE_HEIGHT,
                                    IMAGE_WIDTH));
-                    break;
-                case "cmin":
-                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.C_Minor_Root, false,
-                                   IMAGE_HEIGHT,
-                                   IMAGE_WIDTH),
-                                   draw.DrawKeyboardAndChord(ChordsEnum.C_Minor_1st, false,
-                                   IMAGE_HEIGHT,
-                                   IMAGE_WIDTH),
-                                   draw.DrawKeyboardAndChord(ChordsEnum.C_Minor_2nd, false,
-                                   IMAGE_HEIGHT,
-                                   IMAGE_WIDTH));
-                    break;
+                    break;              
                 case "dflatmaj":
                     SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.D_Flat_Major_Root, false,
                                    IMAGE_HEIGHT,
@@ -259,6 +248,183 @@ namespace PianoChordGenerator.WinUI
                                    IMAGE_HEIGHT,
                                    IMAGE_WIDTH),
                                    draw.DrawKeyboardAndChord(ChordsEnum.B_Major_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
+                case "cmin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.C_Minor_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.C_Minor_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.C_Minor_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
+                case "csharpmin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.C_Sharp_Minor_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.C_Sharp_Minor_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.C_Sharp_Minor_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
+                case "dflatmin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.D_Flat_Minor_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.D_Flat_Minor_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.D_Flat_Minor_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
+                case "dmin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.D_Minor_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.D_Minor_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.D_Minor_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+
+                    break;
+                case "dsharpmin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.D_Sharp_Minor_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.D_Sharp_Minor_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.D_Sharp_Minor_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
+                case "eflatmin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.E_Flat_Minor_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.E_Flat_Minor_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.E_Flat_Minor_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
+                case "emin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.E_Minor_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.E_Minor_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.E_Minor_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
+                case "fmin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.F_Minor_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.F_Minor_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.F_Minor_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
+                case "fsharpmin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.F_Sharp_Minor_Root, false,
+                                 IMAGE_HEIGHT,
+                                 IMAGE_WIDTH),
+                                 draw.DrawKeyboardAndChord(ChordsEnum.F_Sharp_Minor_1st, false,
+                                 IMAGE_HEIGHT,
+                                 IMAGE_WIDTH),
+                                 draw.DrawKeyboardAndChord(ChordsEnum.F_Sharp_Minor_2nd, false,
+                                 IMAGE_HEIGHT,
+                                 IMAGE_WIDTH));
+                    break;
+                case "gflatmin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.G_Flat_Minor_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.G_Flat_Minor_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.G_Flat_Minor_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
+                case "gmin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.G_Minor_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.G_Minor_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.G_Minor_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
+                case "gsharpmin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.G_Sharp_Minor_Root, false,
+                                 IMAGE_HEIGHT,
+                                 IMAGE_WIDTH),
+                                 draw.DrawKeyboardAndChord(ChordsEnum.G_Sharp_Minor_1st, false,
+                                 IMAGE_HEIGHT,
+                                 IMAGE_WIDTH),
+                                 draw.DrawKeyboardAndChord(ChordsEnum.G_Sharp_Minor_2nd, false,
+                                 IMAGE_HEIGHT,
+                                 IMAGE_WIDTH));
+                    break;
+                case "aflatmin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.A_Flat_Minor_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.A_Flat_Minor_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.A_Flat_Minor_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
+                case "amin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.A_Minor_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.A_Minor_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.A_Minor_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
+                case "asharpmin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.A_Sharp_Minor_Root, false,
+                                 IMAGE_HEIGHT,
+                                 IMAGE_WIDTH),
+                                 draw.DrawKeyboardAndChord(ChordsEnum.A_Sharp_Minor_1st, false,
+                                 IMAGE_HEIGHT,
+                                 IMAGE_WIDTH),
+                                 draw.DrawKeyboardAndChord(ChordsEnum.A_Sharp_Minor_2nd, false,
+                                 IMAGE_HEIGHT,
+                                 IMAGE_WIDTH));
+                    break;
+                case "bmin":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.B_Minor_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.B_Minor_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.B_Minor_2nd, false,
                                    IMAGE_HEIGHT,
                                    IMAGE_WIDTH));
                     break;
