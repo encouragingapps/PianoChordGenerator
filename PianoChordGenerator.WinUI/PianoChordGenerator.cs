@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace PianoChordGenerator.WinUI
 {
@@ -438,5 +439,100 @@ namespace PianoChordGenerator.WinUI
             picSecondInversion.Image = SecondInversion;
         }
 
+        private void btnAddChord_Click(object sender, EventArgs e)
+        {
+            AddChord();
+        }
+
+        private void AddChord()
+        {
+            string ChordName = cboChordSelect.Text;
+            string Inversion = "";
+            string ConcatName = "";
+            bool IsChecked=false;
+
+            if(ChordName=="Major Chords"||ChordName=="Minor Chords")
+            {
+                ShowWarning("Please select a chord");
+                return;
+            }
+        
+            if(radRootPosition.Checked)
+            {
+                Inversion = "Root";
+                IsChecked = true;
+            }
+
+            if(rad1stInversion.Checked)
+            {
+                Inversion = "1st";
+                IsChecked = true;
+            }
+
+            if(rad2ndInversion.Checked)
+            {
+                Inversion = "2nd";
+                IsChecked = true;
+            }
+
+            ConcatName = ChordName + " - " + Inversion;
+
+            if (IsChecked)
+            {
+                int item = lstSelectedChords.FindStringExact(ConcatName);
+                if (item ==-1)
+                {
+                    if(lstSelectedChords.Items.Count<10)
+                    {
+                        lstSelectedChords.Items.Add(ChordName + " - " + Inversion);
+                    }
+                    else
+                    {
+                        ShowWarning("Only 10 chords can be added.");
+                    }
+                    
+                } else
+                {
+                    ShowWarning("Chord has already been added.");
+                }
+               
+
+               
+            } else
+            {
+                ShowWarning("Please select an inversion");
+            }
+            
+
+         }
+
+        private void ShowWarning(string msg)
+        {
+            MessageBox.Show(msg, "Warning",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void btnRemoveChord_Click(object sender, EventArgs e)
+        {
+            RemoveItem();
+        }
+
+        private void RemoveItem()
+        {
+            if (lstSelectedChords.SelectedIndex != -1)
+            {
+                lstSelectedChords.BeginUpdate();
+                ArrayList arrSelectedItems = new ArrayList(lstSelectedChords.SelectedItems);
+                foreach (string item in arrSelectedItems)
+                {
+                    lstSelectedChords.Items.Remove(item);
+                }
+                lstSelectedChords.EndUpdate();
+            }
+            else
+            {
+                ShowWarning("No item selected");
+            }
+        }
     }
 }

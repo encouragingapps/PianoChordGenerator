@@ -35,25 +35,25 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lstSelectedChords = new System.Windows.Forms.ListBox();
             this.lblChordsToExport = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpChordSelect = new System.Windows.Forms.GroupBox();
             this.picRootPosition = new System.Windows.Forms.PictureBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radRootPosition = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.picSecondInversion = new System.Windows.Forms.PictureBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.rad2ndInversion = new System.Windows.Forms.RadioButton();
             this.picFirstInversion = new System.Windows.Forms.PictureBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.button2 = new System.Windows.Forms.Button();
+            this.rad1stInversion = new System.Windows.Forms.RadioButton();
+            this.btnRemoveChord = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAddChord = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cboChordSelect = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabChordSheetGenerator.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.grpChordSelect.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picRootPosition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSecondInversion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFirstInversion)).BeginInit();
@@ -74,10 +74,10 @@
             this.tabChordSheetGenerator.Controls.Add(this.btnGenerateChordSheet);
             this.tabChordSheetGenerator.Controls.Add(this.groupBox2);
             this.tabChordSheetGenerator.Controls.Add(this.lblChordsToExport);
-            this.tabChordSheetGenerator.Controls.Add(this.groupBox1);
-            this.tabChordSheetGenerator.Controls.Add(this.button2);
+            this.tabChordSheetGenerator.Controls.Add(this.grpChordSelect);
+            this.tabChordSheetGenerator.Controls.Add(this.btnRemoveChord);
             this.tabChordSheetGenerator.Controls.Add(this.label3);
-            this.tabChordSheetGenerator.Controls.Add(this.button1);
+            this.tabChordSheetGenerator.Controls.Add(this.btnAddChord);
             this.tabChordSheetGenerator.Controls.Add(this.label1);
             this.tabChordSheetGenerator.Controls.Add(this.cboChordSelect);
             this.tabChordSheetGenerator.Location = new System.Drawing.Point(4, 37);
@@ -128,22 +128,22 @@
             this.lblChordsToExport.TabIndex = 1;
             this.lblChordsToExport.Text = "Chords to Export:";
             // 
-            // groupBox1
+            // grpChordSelect
             // 
-            this.groupBox1.Controls.Add(this.picRootPosition);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.picSecondInversion);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.picFirstInversion);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Location = new System.Drawing.Point(14, 113);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(391, 459);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
+            this.grpChordSelect.Controls.Add(this.picRootPosition);
+            this.grpChordSelect.Controls.Add(this.radRootPosition);
+            this.grpChordSelect.Controls.Add(this.label5);
+            this.grpChordSelect.Controls.Add(this.label2);
+            this.grpChordSelect.Controls.Add(this.label4);
+            this.grpChordSelect.Controls.Add(this.picSecondInversion);
+            this.grpChordSelect.Controls.Add(this.rad2ndInversion);
+            this.grpChordSelect.Controls.Add(this.picFirstInversion);
+            this.grpChordSelect.Controls.Add(this.rad1stInversion);
+            this.grpChordSelect.Location = new System.Drawing.Point(14, 113);
+            this.grpChordSelect.Name = "grpChordSelect";
+            this.grpChordSelect.Size = new System.Drawing.Size(391, 459);
+            this.grpChordSelect.TabIndex = 7;
+            this.grpChordSelect.TabStop = false;
             // 
             // picRootPosition
             // 
@@ -153,15 +153,15 @@
             this.picRootPosition.TabIndex = 4;
             this.picRootPosition.TabStop = false;
             // 
-            // radioButton1
+            // radRootPosition
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(17, 67);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(21, 20);
-            this.radioButton1.TabIndex = 5;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radRootPosition.AutoSize = true;
+            this.radRootPosition.Location = new System.Drawing.Point(17, 67);
+            this.radRootPosition.Name = "radRootPosition";
+            this.radRootPosition.Size = new System.Drawing.Size(21, 20);
+            this.radRootPosition.TabIndex = 5;
+            this.radRootPosition.TabStop = true;
+            this.radRootPosition.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -201,15 +201,15 @@
             this.picSecondInversion.TabIndex = 4;
             this.picSecondInversion.TabStop = false;
             // 
-            // radioButton3
+            // rad2ndInversion
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(14, 350);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(21, 20);
-            this.radioButton3.TabIndex = 5;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rad2ndInversion.AutoSize = true;
+            this.rad2ndInversion.Location = new System.Drawing.Point(14, 350);
+            this.rad2ndInversion.Name = "rad2ndInversion";
+            this.rad2ndInversion.Size = new System.Drawing.Size(21, 20);
+            this.rad2ndInversion.TabIndex = 5;
+            this.rad2ndInversion.TabStop = true;
+            this.rad2ndInversion.UseVisualStyleBackColor = true;
             // 
             // picFirstInversion
             // 
@@ -219,24 +219,25 @@
             this.picFirstInversion.TabIndex = 4;
             this.picFirstInversion.TabStop = false;
             // 
-            // radioButton2
+            // rad1stInversion
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(17, 218);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(21, 20);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rad1stInversion.AutoSize = true;
+            this.rad1stInversion.Location = new System.Drawing.Point(17, 218);
+            this.rad1stInversion.Name = "rad1stInversion";
+            this.rad1stInversion.Size = new System.Drawing.Size(21, 20);
+            this.rad1stInversion.TabIndex = 5;
+            this.rad1stInversion.TabStop = true;
+            this.rad1stInversion.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnRemoveChord
             // 
-            this.button2.Location = new System.Drawing.Point(411, 263);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 34);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "<";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRemoveChord.Location = new System.Drawing.Point(411, 263);
+            this.btnRemoveChord.Name = "btnRemoveChord";
+            this.btnRemoveChord.Size = new System.Drawing.Size(112, 34);
+            this.btnRemoveChord.TabIndex = 3;
+            this.btnRemoveChord.Text = "<";
+            this.btnRemoveChord.UseVisualStyleBackColor = true;
+            this.btnRemoveChord.Click += new System.EventHandler(this.btnRemoveChord_Click);
             // 
             // label3
             // 
@@ -248,14 +249,15 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Select a Chord Inversion:";
             // 
-            // button1
+            // btnAddChord
             // 
-            this.button1.Location = new System.Drawing.Point(411, 195);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 34);
-            this.button1.TabIndex = 3;
-            this.button1.Text = ">";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAddChord.Location = new System.Drawing.Point(411, 195);
+            this.btnAddChord.Name = "btnAddChord";
+            this.btnAddChord.Size = new System.Drawing.Size(112, 34);
+            this.btnAddChord.TabIndex = 3;
+            this.btnAddChord.Text = ">";
+            this.btnAddChord.UseVisualStyleBackColor = true;
+            this.btnAddChord.Click += new System.EventHandler(this.btnAddChord_Click);
             // 
             // label1
             // 
@@ -289,8 +291,8 @@
             this.tabChordSheetGenerator.ResumeLayout(false);
             this.tabChordSheetGenerator.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grpChordSelect.ResumeLayout(false);
+            this.grpChordSelect.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picRootPosition)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSecondInversion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFirstInversion)).EndInit();
@@ -302,22 +304,22 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabChordSheetGenerator;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddChord;
         private System.Windows.Forms.ListBox lstSelectedChords;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboChordSelect;
         private System.Windows.Forms.PictureBox picRootPosition;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radRootPosition;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox picSecondInversion;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton rad2ndInversion;
         private System.Windows.Forms.PictureBox picFirstInversion;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.RadioButton rad1stInversion;
+        private System.Windows.Forms.Button btnRemoveChord;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpChordSelect;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label lblChordsToExport;
         private System.Windows.Forms.Button btnGenerateChordSheet;
