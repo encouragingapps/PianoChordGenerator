@@ -534,5 +534,15 @@ namespace PianoChordGenerator.WinUI
                 ShowWarning("No item selected");
             }
         }
+
+        private void btnGenerateChordSheet_Click(object sender, EventArgs e)
+        {
+            GenerateChordSheet();
+        }
+
+        private void GenerateChordSheet()
+        {
+            logic.GeneratePianoChart(lstSelectedChords.Items.Cast<string>().ToList());
+        }
     }
 }

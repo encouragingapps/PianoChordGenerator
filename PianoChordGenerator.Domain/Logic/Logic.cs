@@ -23,10 +23,18 @@ namespace PianoChordGenerator.Domain.Logic
             return data.GetData();
         }
         
-        public void GeneratePianoChart(PianoChartData pianoChartData)
+        /// <summary>
+        /// Generate the SVG pianochord output
+        /// </summary>
+        /// <param name="pianoChartData"></param>
+        public void GeneratePianoChart(List<string> chartsToGenerate)
         {
-            
+
+            int ChartCounter=0;
             string pathname = @"C:\Temp\" + Guid.NewGuid().ToString() + "pianochord.svg";
+
+            PianoChartData pianoChartData = new PianoChartData();
+
 
             using (XmlWriter writer = XmlWriter.Create(pathname))
             {
@@ -36,24 +44,34 @@ namespace PianoChordGenerator.Domain.Logic
                 writer.WriteAttributeString("height", "11in");
 
 
-                //Render all of the headers first
-                foreach (PianoChartRenderModel item in
-                        pianoChartData.ChartList.Where(x => x.PianoObject == PianoObjectTypeEnum.HeaderText).ToList())
+                foreach (string chord in chartsToGenerate)
                 {
-                    CreateHeader(writer, item.GenerateHeaderFriendlyId(),
-                                     item.HeaderText,
-                                     item.X, item.Y);
+                    ChartCounter++;
+
+                    //Render all of the headers first
+                    foreach (PianoChartRenderModel item in
+                            pianoChartData.ChartList.Where(x => x.PianoObject == PianoObjectTypeEnum.HeaderText
+                                                           && x.ChartId==ChartCounter.ToString()).ToList())
+                    {
+                        CreateHeader(writer, item.GenerateHeaderFriendlyId(),
+                                         chord,
+                                         item.X, item.Y);
+                    }
+
+                    //Render all of the keys
+                    foreach (PianoChartRenderModel item in
+                          pianoChartData.ChartList.Where(x => x.PianoObject == PianoObjectTypeEnum.PianoKey
+                                                         && x.ChartId==ChartCounter.ToString()).ToList())
+                    {
+                        CreateKey(writer,
+                                  item.PianoKeyType,
+                                  item.GeneratePianoKeyFriendlyId(),
+                                  item.X, item.Y);
+                    }
+
                 }
 
-                //Render all of the keys
-                foreach (PianoChartRenderModel item in
-                      pianoChartData.ChartList.Where(x => x.PianoObject == PianoObjectTypeEnum.PianoKey).ToList())
-                {
-                    CreateKey(writer,
-                              item.PianoKeyType,
-                              item.GeneratePianoKeyFriendlyId(),
-                              item.X, item.Y);
-                }
+             
 
 
                 //TODO: Add copyright

@@ -98,6 +98,7 @@
             this.btnGenerateChordSheet.TabIndex = 3;
             this.btnGenerateChordSheet.Text = "Generate Chord Sheet";
             this.btnGenerateChordSheet.UseVisualStyleBackColor = false;
+            this.btnGenerateChordSheet.Click += new System.EventHandler(this.btnGenerateChordSheet_Click);
             // 
             // groupBox2
             // 
