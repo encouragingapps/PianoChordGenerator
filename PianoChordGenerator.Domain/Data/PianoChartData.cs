@@ -19,10 +19,18 @@ namespace PianoChordGenerator.Domain
             
             const int xWhiteKeyIndicatorOffset = 10;
             const int xBlackKeyIndicatorOffset = 5;
-
-            const string yRow1ChordIndicatorWhiteKeys = "164.71861";
+            
+            //Rows
+            const string yRow1ChordIndicatorWhiteKeys = "164.71861";            
+            const string yRow2ChordIndicatorWhiteKeys = "350.93127";
+            const string yRow3ChordIndicatorWhiteKeys = "538.43115";
+            const string yRow4ChordIndicatorWhiteKeys = "725.71942";
+            const string yRow5ChordIndicatorWhiteKeys = "907.92285";
             const string yRow1ChordIndicatorBlackKeys = "110.60148";
-
+            const string yRow2ChordIndicatorBlackKeys = "296.64819";
+            const string yRow3ChordIndicatorBlackKeys = "483.72449";
+            const string yRow4ChordIndicatorBlackKeys = "671.22449";
+            const string yRow5ChordIndicatorBlackKeys = "853.63971";
 
             //Columns
             const string xHeaderLeftChart = "33.550846";
@@ -94,31 +102,54 @@ namespace PianoChordGenerator.Domain
 
             ///Right Charts
             const string xWhiteKey1RightChart = "409.52878";
+            string xWhiteKey1IndicatorRightChart = (float.Parse(xWhiteKey1RightChart) + xWhiteKeyIndicatorOffset).ToString();
             const string xWhiteKey2RightChart = "430.56461";
+            string xWhiteKey2IndicatorRightChart = (float.Parse(xWhiteKey2RightChart) + xWhiteKeyIndicatorOffset).ToString();
             const string xWhiteKey3RightChart = "451.60046";
+            string xWhiteKey3IndicatorRightChart = (float.Parse(xWhiteKey3RightChart) + xWhiteKeyIndicatorOffset).ToString();
             const string xWhiteKey4RightChart = "472.63632";
+            string xWhiteKey4IndicatorRightChart = (float.Parse(xWhiteKey4RightChart) + xWhiteKeyIndicatorOffset).ToString();
             const string xWhiteKey5RightChart = "493.67215";
+            string xWhiteKey5IndicatorRightChart = (float.Parse(xWhiteKey5RightChart) + xWhiteKeyIndicatorOffset).ToString();
             const string xWhiteKey6RightChart = "514.70795";
+            string xWhiteKey6IndicatorRightChart = (float.Parse(xWhiteKey6RightChart) + xWhiteKeyIndicatorOffset).ToString();
             const string xWhiteKey7RightChart = "535.74377";
+            string xWhiteKey7IndicatorRightChart = (float.Parse(xWhiteKey7RightChart) + xWhiteKeyIndicatorOffset).ToString();
             const string xWhiteKey8RightChart = "556.7796";
+            string xWhiteKey8IndicatorRightChart = (float.Parse(xWhiteKey8RightChart) + xWhiteKeyIndicatorOffset).ToString();
             const string xWhiteKey9RightChart = "577.81549";
+            string xWhiteKey9IndicatorRightChart = (float.Parse(xWhiteKey9RightChart) + xWhiteKeyIndicatorOffset).ToString();
             const string xWhiteKey10RightChart = "598.85126";
+            string xWhiteKey10IndicatorRightChart = (float.Parse(xWhiteKey10RightChart) + xWhiteKeyIndicatorOffset).ToString();
             const string xWhiteKey11RightChart = "619.88715";
+            string xWhiteKey11IndicatorRightChart = (float.Parse(xWhiteKey11RightChart) + xWhiteKeyIndicatorOffset).ToString();
             const string xWhiteKey12RightChart = "640.92297";
+            string xWhiteKey12IndicatorRightChart = (float.Parse(xWhiteKey12RightChart) + xWhiteKeyIndicatorOffset).ToString();
             const string xWhiteKey13RightChart = "661.9588";
+            string xWhiteKey13IndicatorRightChart = (float.Parse(xWhiteKey13RightChart) + xWhiteKeyIndicatorOffset).ToString();
             const string xWhiteKey14RightChart = "682.99469";
+            string xWhiteKey14IndicatorRightChart = (float.Parse(xWhiteKey14RightChart) + xWhiteKeyIndicatorOffset).ToString();
             const string xBlackKey1RightChart = "425.56488";
+            string xBlackKey1IndicatorRightChart = (float.Parse(xBlackKey1RightChart) + xBlackKeyIndicatorOffset).ToString();
             const string xBlackKey2RightChart = "446.81256";
+            string xBlackKey2IndicatorRightChart = (float.Parse(xBlackKey2RightChart) + xBlackKeyIndicatorOffset).ToString();
             const string xBlackKey3RightChart = "488.97214";
+            string xBlackKey3IndicatorRightChart = (float.Parse(xBlackKey3RightChart) + xBlackKeyIndicatorOffset).ToString();
             const string xBlackKey4RightChart = "510.00803";
+            string xBlackKey4IndicatorRightChart = (float.Parse(xBlackKey4RightChart) + xBlackKeyIndicatorOffset).ToString();
             const string xBlackKey5RightChart = "531.04376";
+            string xBlackKey5IndicatorRightChart = (float.Parse(xBlackKey5RightChart) + xBlackKeyIndicatorOffset).ToString();
             const string xBlackKey6RightChart = "573.02759";
+            string xBlackKey6IndicatorRightChart = (float.Parse(xBlackKey6RightChart) + xBlackKeyIndicatorOffset).ToString();
             const string xBlackKey7RightChart = "594.06335";
+            string xBlackKey7IndicatorRightChart = (float.Parse(xBlackKey7RightChart) + xBlackKeyIndicatorOffset).ToString();
             const string xBlackKey8RightChart = "636.37219";
+            string xBlackKey8IndicatorRightChart = (float.Parse(xBlackKey8RightChart) + xBlackKeyIndicatorOffset).ToString();
             const string xBlackKey9RightChart = "658.37787";
+            string xBlackKey9IndicatorRightChart = (float.Parse(xBlackKey9RightChart) + xBlackKeyIndicatorOffset).ToString();
             const string xBlackKey10RightChart = "679.41364";
+            string xBlackKey10IndicatorRightChart = (float.Parse(xBlackKey10RightChart) + xBlackKeyIndicatorOffset).ToString();
 
-            
 
             #endregion
 
@@ -692,6 +723,20 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "1",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey1IndicatorRightChart,
+                Y = yRow1ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
@@ -700,6 +745,18 @@ namespace PianoChordGenerator.Domain
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey1RightChart,
                 Y = yRow1
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey1IndicatorRightChart,
+                Y = yRow1ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -719,11 +776,36 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey2IndicatorRightChart,
+                Y = yRow1ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
                 PianoKeyId = "3",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey3RightChart,
                 Y = yRow1
+            };
+
+            ChartList.Add(ChartItem);
+
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey3IndicatorRightChart,
+                Y = yRow1ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -740,6 +822,19 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey4IndicatorRightChart,
+                Y = yRow1ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
@@ -748,6 +843,19 @@ namespace PianoChordGenerator.Domain
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey5RightChart,
                 Y = yRow1
+            };
+
+            ChartList.Add(ChartItem);
+
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey5IndicatorRightChart,
+                Y = yRow1ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -767,11 +875,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey6IndicatorRightChart,
+                Y = yRow1ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
                 PianoKeyId = "7",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey7RightChart,
                 Y = yRow1
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey7IndicatorRightChart,
+                Y = yRow1ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -791,11 +923,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey8IndicatorRightChart,
+                Y = yRow1ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
                 PianoKeyId = "9",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey9RightChart,
                 Y = yRow1
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey9IndicatorRightChart,
+                Y = yRow1ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -815,11 +971,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey10IndicatorRightChart,
+                Y = yRow1ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
                 PianoKeyId = "11",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey11RightChart,
                 Y = yRow1
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
+                PianoKeyId = "11",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey11IndicatorRightChart,
+                Y = yRow1ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -839,6 +1019,18 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
+                PianoKeyId = "12",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey12IndicatorRightChart,
+                Y = yRow1ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
                 PianoKeyId = "13",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
@@ -851,11 +1043,36 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
+                PianoKeyId = "13",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey13IndicatorRightChart,
+                Y = yRow1ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
                 PianoKeyId = "14",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey14RightChart,
                 Y = yRow1
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
+                PianoKeyId = "14",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey14IndicatorRightChart,
+                Y = yRow1ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -876,11 +1093,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey1IndicatorRightChart,
+                Y = yRow1ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
                 PianoKeyId = "2",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
                 X = xBlackKey2RightChart,
                 Y = yRow1
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey2IndicatorRightChart,
+                Y = yRow1ChordIndicatorBlackKeys
             };
 
             ChartList.Add(ChartItem);
@@ -900,6 +1141,18 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey3IndicatorRightChart,
+                Y = yRow1ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
                 PianoKeyId = "4",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
@@ -912,11 +1165,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey4IndicatorRightChart,
+                Y = yRow1ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
                 PianoKeyId = "5",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
                 X = xBlackKey5RightChart,
                 Y = yRow1
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey5IndicatorRightChart,
+                Y = yRow1ChordIndicatorBlackKeys
             };
 
             ChartList.Add(ChartItem);
@@ -937,11 +1214,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey6IndicatorRightChart,
+                Y = yRow1ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
                 PianoKeyId = "7",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
                 X = xBlackKey7RightChart,
                 Y = yRow1
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey7IndicatorRightChart,
+                Y = yRow1ChordIndicatorBlackKeys
             };
 
             ChartList.Add(ChartItem);
@@ -961,11 +1262,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "2",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey8IndicatorRightChart,
+                Y = yRow1ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
                 PianoKeyId = "9",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
                 X = xBlackKey9RightChart,
                 Y = yRow1
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey9IndicatorRightChart,
+                Y = yRow1ChordIndicatorBlackKeys
             };
 
             ChartList.Add(ChartItem);
@@ -982,6 +1307,18 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "2",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey10IndicatorRightChart,
+                Y = yRow1ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
             #endregion
 
             #region "Chart 3 Left"
@@ -991,7 +1328,7 @@ namespace PianoChordGenerator.Domain
                 ChartId = "3",
                 PianoObject = PianoObjectTypeEnum.HeaderText,
                 HeaderText = "C Root Position",
-                X = xHeaderLeftChart,
+                X = xWhiteKey1IndicatorLeftChart,
                 Y = yHeaderRow2
             };
 
@@ -1012,11 +1349,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey1IndicatorLeftChart,
+                Y = yRow2ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
                 PianoKeyId = "2",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey2LeftChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey2IndicatorLeftChart,
+                Y = yRow2ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1036,11 +1397,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey3IndicatorLeftChart,
+                Y = yRow2ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
                 PianoKeyId = "4",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey4LeftChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey4IndicatorLeftChart,
+                Y = yRow2ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1060,11 +1445,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey5IndicatorLeftChart,
+                Y = yRow2ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
                 PianoKeyId = "6",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey6LeftChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey6IndicatorLeftChart,
+                Y = yRow2ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1084,11 +1493,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey7IndicatorLeftChart,
+                Y = yRow2ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
                 PianoKeyId = "8",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey8LeftChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey8IndicatorLeftChart,
+                Y = yRow2ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1108,11 +1541,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey9IndicatorLeftChart,
+                Y = yRow2ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
                 PianoKeyId = "10",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey10LeftChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey10IndicatorLeftChart,
+                Y = yRow2ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1132,11 +1589,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
+                PianoKeyId = "11",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey11IndicatorLeftChart,
+                Y = yRow2ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
                 PianoKeyId = "12",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey12LeftChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
+                PianoKeyId = "12",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey12IndicatorLeftChart,
+                Y = yRow2ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1156,11 +1637,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
+                PianoKeyId = "13",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey13IndicatorLeftChart,
+                Y = yRow2ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
                 PianoKeyId = "14",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey14LeftChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
+                PianoKeyId = "14",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey14IndicatorLeftChart,
+                Y = yRow2ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1181,11 +1686,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey1IndicatorLeftChart,
+                Y = yRow2ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
                 PianoKeyId = "2",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
                 X = xBlackKey2LeftChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey2IndicatorLeftChart,
+                Y = yRow2ChordIndicatorBlackKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1205,6 +1734,18 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey3IndicatorLeftChart,
+                Y = yRow2ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
                 PianoKeyId = "4",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
@@ -1217,11 +1758,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey4IndicatorLeftChart,
+                Y = yRow2ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
                 PianoKeyId = "5",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
                 X = xBlackKey5LeftChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey5IndicatorLeftChart,
+                Y = yRow2ChordIndicatorBlackKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1242,11 +1807,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey6IndicatorLeftChart,
+                Y = yRow2ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
                 PianoKeyId = "7",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
                 X = xBlackKey7LeftChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey7IndicatorLeftChart,
+                Y = yRow2ChordIndicatorBlackKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1266,6 +1855,18 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey8IndicatorLeftChart,
+                Y = yRow2ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
                 PianoKeyId = "9",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
@@ -1278,11 +1879,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "3",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey9IndicatorLeftChart,
+                Y = yRow2ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
                 PianoKeyId = "10",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
                 X = xBlackKey10LeftChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "3",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey10IndicatorLeftChart,
+                Y = yRow2ChordIndicatorBlackKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1316,11 +1941,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey1IndicatorRightChart,
+                Y = yRow2ChordIndicatorWhiteKeys 
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
                 PianoKeyId = "2",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey2RightChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey2IndicatorRightChart,
+                Y = yRow2ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1340,11 +1989,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey3IndicatorRightChart,
+                Y = yRow2ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
                 PianoKeyId = "4",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey4RightChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey4IndicatorRightChart,
+                Y = yRow2ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1364,11 +2037,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey5IndicatorRightChart,
+                Y = yRow2ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
                 PianoKeyId = "6",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey6RightChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey6IndicatorRightChart,
+                Y = yRow2ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1388,11 +2085,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey7IndicatorRightChart,
+                Y = yRow2ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
                 PianoKeyId = "8",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey8RightChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey8IndicatorRightChart,
+                Y = yRow2ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1412,11 +2133,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey9IndicatorRightChart,
+                Y = yRow2ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
                 PianoKeyId = "10",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey10RightChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey10IndicatorRightChart,
+                Y = yRow2ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1436,11 +2181,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
+                PianoKeyId = "11",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey11IndicatorRightChart,
+                Y = yRow2ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
                 PianoKeyId = "12",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
                 X = xWhiteKey12RightChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
+                PianoKeyId = "12",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey12IndicatorRightChart,
+                Y = yRow2ChordIndicatorWhiteKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1460,6 +2229,18 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
+                PianoKeyId = "13",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey13IndicatorRightChart,
+                Y = yRow2ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
                 PianoKeyId = "14",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.WhiteKey,
@@ -1469,6 +2250,17 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
+                PianoKeyId = "14",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                X = xWhiteKey14IndicatorRightChart,
+                Y = yRow2ChordIndicatorWhiteKeys
+            };
+
+            ChartList.Add(ChartItem);
 
             ChartItem = new PianoChartRenderModel
             {
@@ -1478,6 +2270,18 @@ namespace PianoChordGenerator.Domain
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
                 X = xBlackKey1RightChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
+                PianoKeyId = "1",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey1IndicatorRightChart,
+                Y = yRow2ChordIndicatorBlackKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1497,11 +2301,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
+                PianoKeyId = "2",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey2IndicatorRightChart,
+                Y = yRow2ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
                 PianoKeyId = "3",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
                 X = xBlackKey3RightChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
+                PianoKeyId = "3",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey3IndicatorRightChart,
+                Y = yRow2ChordIndicatorBlackKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1521,11 +2349,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
+                PianoKeyId = "4",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey4IndicatorRightChart,
+                Y = yRow2ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
                 PianoKeyId = "5",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
                 X = xBlackKey5RightChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
+                PianoKeyId = "5",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey5IndicatorRightChart,
+                Y = yRow2ChordIndicatorBlackKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1546,11 +2398,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
+                PianoKeyId = "6",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey6IndicatorRightChart,
+                Y = yRow2ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
                 PianoKeyId = "7",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
                 X = xBlackKey7RightChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
+                PianoKeyId = "7",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey7IndicatorRightChart,
+                Y = yRow2ChordIndicatorBlackKeys
             };
 
             ChartList.Add(ChartItem);
@@ -1570,6 +2446,20 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
+                PianoKeyId = "8",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey8IndicatorRightChart,
+                Y = yRow2ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
                 PianoKeyId = "9",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
@@ -1582,11 +2472,35 @@ namespace PianoChordGenerator.Domain
             ChartItem = new PianoChartRenderModel
             {
                 ChartId = "4",
+                PianoKeyId = "9",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey9IndicatorRightChart,
+                Y = yRow2ChordIndicatorBlackKeys
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
                 PianoKeyId = "10",
                 PianoObject = PianoObjectTypeEnum.PianoKey,
                 PianoKeyType = PianoKeyTypeEnum.BlackKey,
                 X = xBlackKey10RightChart,
                 Y = yRow2
+            };
+
+            ChartList.Add(ChartItem);
+
+            ChartItem = new PianoChartRenderModel
+            {
+                ChartId = "4",
+                PianoKeyId = "10",
+                PianoObject = PianoObjectTypeEnum.Indicator,
+                PianoKeyType = PianoKeyTypeEnum.BlackKey,
+                X = xBlackKey10IndicatorRightChart,
+                Y = yRow2ChordIndicatorBlackKeys
             };
 
             ChartList.Add(ChartItem);
