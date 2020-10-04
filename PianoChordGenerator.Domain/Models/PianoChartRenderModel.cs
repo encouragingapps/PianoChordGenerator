@@ -35,6 +35,25 @@ namespace PianoChordGenerator.Domain.Models
             return chartId + keyType;
         }
 
+        public string GenerateChordIndicatorFriendlyId()
+        {
+            string keyType;
+            string chartId;
+
+            if (PianoKeyType == PianoKeyTypeEnum.WhiteKey)
+            {
+                keyType = "WhiteKeyIndicator" + PianoKeyId;
+            }
+            else
+            {
+                keyType = "BlackKeyIndicator" + PianoKeyId;
+            }
+
+            chartId = "ChartID" + ChartId;
+
+            return chartId + keyType;
+        }
+
         public string GenerateHeaderFriendlyId()
         {
             return "ChartID" + ChartId + "Header";

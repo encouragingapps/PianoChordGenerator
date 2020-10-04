@@ -69,6 +69,17 @@ namespace PianoChordGenerator.Domain.Logic
                                   item.X, item.Y);
                     }
 
+                    //Render all of the indicators
+                    foreach (PianoChartRenderModel item in
+                       pianoChartData.ChartList.Where(x => x.PianoObject == PianoObjectTypeEnum.Indicator
+                                                      && x.ChartId == ChartCounter.ToString()).ToList())
+                    {
+                        CreateIndicator(writer,
+                                  item.PianoKeyType,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                    }
+
                 }
 
              
@@ -131,6 +142,30 @@ namespace PianoChordGenerator.Domain.Logic
 
             writer.WriteEndElement();
         }
+
+        private void CreateIndicator(XmlWriter writer,
+                               PianoKeyTypeEnum keytype,
+                               string id,
+                               string x,
+                               string y
+            )
+        {
+            const string INDICATOR_STYLE = "opacity:1;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:0.78304571;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1";
+            const string RADIUSX = "7.7355957";
+            const string RADIUSY = "6.8881383";
+
+            writer.WriteStartElement("ellipse");
+            writer.WriteAttributeString("id", id);
+            writer.WriteAttributeString("rx", RADIUSX);
+            writer.WriteAttributeString("ry", RADIUSY);
+            writer.WriteAttributeString("cx", x);
+            writer.WriteAttributeString("cy", y);
+            writer.WriteAttributeString("style", INDICATOR_STYLE);            
+            writer.WriteEndElement();
+
+        }
+
+
         
        
 
