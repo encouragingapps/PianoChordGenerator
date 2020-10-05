@@ -512,6 +512,12 @@ namespace PianoChordGenerator.WinUI
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
+        private void ShowSuccess(string msg)
+        {
+            MessageBox.Show(msg, "Success",
+                               MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         private void btnRemoveChord_Click(object sender, EventArgs e)
         {
             RemoveItem();
@@ -543,6 +549,7 @@ namespace PianoChordGenerator.WinUI
         private void GenerateChordSheet()
         {
             logic.GeneratePianoChart(lstSelectedChords.Items.Cast<string>().ToList());
+            ShowSuccess("Chordsheet successfully generated!");
         }
 
         private void picRootPosition_Click(object sender, EventArgs e)
