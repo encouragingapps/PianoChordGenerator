@@ -153,6 +153,7 @@
             this.picRootPosition.Size = new System.Drawing.Size(302, 108);
             this.picRootPosition.TabIndex = 4;
             this.picRootPosition.TabStop = false;
+            this.picRootPosition.Click += new System.EventHandler(this.picRootPosition_Click);
             // 
             // radRootPosition
             // 
@@ -201,6 +202,7 @@
             this.picSecondInversion.Size = new System.Drawing.Size(302, 108);
             this.picSecondInversion.TabIndex = 4;
             this.picSecondInversion.TabStop = false;
+            this.picSecondInversion.Click += new System.EventHandler(this.picSecondInversion_Click);
             // 
             // rad2ndInversion
             // 
@@ -219,6 +221,7 @@
             this.picFirstInversion.Size = new System.Drawing.Size(302, 108);
             this.picFirstInversion.TabIndex = 4;
             this.picFirstInversion.TabStop = false;
+            this.picFirstInversion.Click += new System.EventHandler(this.picFirstInversion_Click);
             // 
             // rad1stInversion
             // 

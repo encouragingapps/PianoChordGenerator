@@ -544,5 +544,26 @@ namespace PianoChordGenerator.WinUI
         {
             logic.GeneratePianoChart(lstSelectedChords.Items.Cast<string>().ToList());
         }
+
+        private void picRootPosition_Click(object sender, EventArgs e)
+        {
+            radRootPosition.Checked = true;
+            rad1stInversion.Checked = false;
+            rad2ndInversion.Checked = false;
+        }
+
+        private void picFirstInversion_Click(object sender, EventArgs e)
+        {
+            radRootPosition.Checked = false;
+            rad1stInversion.Checked = true;
+            rad2ndInversion.Checked = false;
+        }
+
+        private void picSecondInversion_Click(object sender, EventArgs e)
+        {
+            radRootPosition.Checked = false;
+            rad1stInversion.Checked = false;
+            rad2ndInversion.Checked = true;
+        }
     }
 }
