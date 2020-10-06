@@ -7,6 +7,9 @@ namespace PianoChordGenerator.Domain.Models
 {
     public class PianoKeyChordSelectionModel 
     {
+        const string Root = " - Root";
+        const string First = " - 1st";
+        const string Second = " - 2nd";
 
         public PianoKeyChordSelectionModel(ChordsEnum chord)
         {
@@ -38,6 +41,177 @@ namespace PianoChordGenerator.Domain.Models
         public bool IsSelectedPianoBlack8KeyId { get; set; }
         public bool IsSelectedPianoBlack9KeyId { get; set; }
         public bool IsSelectedPianoBlack10KeyId { get; set; }
+
+      
+        public void SetChordByFullName(string chord)
+        {
+
+            ChordsEnum translateChordToEnum; 
+
+            switch (chord)
+            {
+                case "C Major"+Root:
+                    translateChordToEnum = ChordsEnum.C_Major_Root;
+                    SetChord(translateChordToEnum);                    
+                    break;
+                case "C Major"+First:
+                    translateChordToEnum = ChordsEnum.C_Major_1st;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "C Major" + Second:
+                    translateChordToEnum = ChordsEnum.C_Major_2nd;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "C# Major" + Root:
+                case "Db Major" + Root:
+                    translateChordToEnum = ChordsEnum.C_Sharp_Major_Root;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "C# Major" + First:
+                case "Db Major" + First:
+                    translateChordToEnum = ChordsEnum.C_Sharp_Major_1st;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "C# Major" + Second:
+                case "Db Major" + Second:
+                    translateChordToEnum = ChordsEnum.C_Sharp_Major_2nd;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "D Major" + Root:
+                    translateChordToEnum = ChordsEnum.D_Major_Root;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "D Major" + First:
+                    translateChordToEnum = ChordsEnum.D_Major_1st;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "D Major" + Second:
+                    translateChordToEnum = ChordsEnum.D_Major_2nd;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "D# Major" + Root:
+                case "Eb Major" + Root:
+                    translateChordToEnum = ChordsEnum.D_Sharp_Major_Root;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "D# Major" + First:
+                case "Eb Major" + First:
+                    translateChordToEnum = ChordsEnum.D_Sharp_Major_1st;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "D# Major" + Second:
+                case "Eb Major" + Second:
+                    translateChordToEnum = ChordsEnum.D_Sharp_Major_2nd;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "E Major" + Root:
+                    translateChordToEnum = ChordsEnum.E_Major_Root;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "E Major" + First:
+                    translateChordToEnum = ChordsEnum.E_Major_1st;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "E Major" + Second:
+                    translateChordToEnum = ChordsEnum.E_Major_2nd;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "F Major" + Root:
+                    translateChordToEnum = ChordsEnum.F_Major_Root;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "F Major" + First:
+                    translateChordToEnum = ChordsEnum.F_Major_1st;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "F Major" + Second:
+                    translateChordToEnum = ChordsEnum.F_Major_2nd;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "F# Major" + Root:
+                case "Gb Major" + Root:
+                    translateChordToEnum = ChordsEnum.F_Sharp_Major_Root;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "F# Major" + First:
+                case "Gb Major" + First:
+                    translateChordToEnum = ChordsEnum.F_Sharp_Major_1st;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "F# Major" + Second:
+                case "Gb Major" + Second:
+                    translateChordToEnum = ChordsEnum.F_Sharp_Major_2nd;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "G Major" + Root:
+                    translateChordToEnum = ChordsEnum.G_Major_Root;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "G Major" + First:
+                    translateChordToEnum = ChordsEnum.G_Major_1st;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "G Major" + Second:
+                    translateChordToEnum = ChordsEnum.G_Major_2nd;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "G# Major" + Root:
+                case "Ab Major" + Root:
+                    translateChordToEnum = ChordsEnum.G_Sharp_Major_Root;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "G# Major" + First:
+                case "Ab Major" + First:
+                    translateChordToEnum = ChordsEnum.G_Sharp_Major_1st;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "G# Major" + Second:
+                case "Ab Major" + Second:
+                    translateChordToEnum = ChordsEnum.G_Sharp_Major_2nd;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "A Major" + Root:
+                    translateChordToEnum = ChordsEnum.A_Major_Root;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "A Major" + First:
+                    translateChordToEnum = ChordsEnum.A_Major_1st;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "A Major" + Second:
+                    translateChordToEnum = ChordsEnum.A_Major_2nd;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "A# Major" + Root:
+                case "Bb Major" + Root:
+                    translateChordToEnum = ChordsEnum.A_Sharp_Major_Root;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "A# Major" + First:
+                case "Bb Major" + First:
+                    translateChordToEnum = ChordsEnum.A_Sharp_Major_1st;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "A# Major" + Second:
+                case "Bb Major" + Second:
+                    translateChordToEnum = ChordsEnum.A_Sharp_Major_2nd;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "B Major" + Root:
+                    translateChordToEnum = ChordsEnum.B_Major_Root;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "B Major" + First:
+                    translateChordToEnum = ChordsEnum.B_Major_1st;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "B Major" + Second:
+                    translateChordToEnum = ChordsEnum.B_Major_2nd;
+                    SetChord(translateChordToEnum);
+                    break;
+            }
+            
+        }
 
         public void SetChord(ChordsEnum chord)
         {
