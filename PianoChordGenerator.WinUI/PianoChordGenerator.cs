@@ -14,14 +14,14 @@ using System.Collections;
 
 namespace PianoChordGenerator.WinUI
 {
-    public partial class frmPianoChordGenerator : Form
+    public partial class FormPianoChordGenerator : Form
     {
-        private Logic logic = new Logic();
-        private PianoKeyDrawing draw = new PianoKeyDrawing();
+        private readonly Logic logic = new Logic();
+        private readonly PianoKeyDrawing draw = new PianoKeyDrawing();
         private const int IMAGE_HEIGHT = 108;
         private const int IMAGE_WIDTH = 302;
 
-        public frmPianoChordGenerator()
+        public FormPianoChordGenerator()
         {
             InitializeComponent();
 
@@ -62,7 +62,7 @@ namespace PianoChordGenerator.WinUI
         #endregion
 
 
-        private void cboChordSelect_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBoxChordSelect_SelectedIndexChanged(object sender, EventArgs e)
         {
             EvaluateChordSelection(cboChordSelect.SelectedValue.ToString());
         }
@@ -439,7 +439,7 @@ namespace PianoChordGenerator.WinUI
             picSecondInversion.Image = SecondInversion;
         }
 
-        private void btnAddChord_Click(object sender, EventArgs e)
+        private void ButtonAddChord_Click(object sender, EventArgs e)
         {
             AddChord();
         }
@@ -448,7 +448,7 @@ namespace PianoChordGenerator.WinUI
         {
             string ChordName = cboChordSelect.Text;
             string Inversion = "";
-            string ConcatName = "";
+            string ConcatName;
             bool IsChecked=false;
 
             if(ChordName=="Major Chords"||ChordName=="Minor Chords")
@@ -518,7 +518,7 @@ namespace PianoChordGenerator.WinUI
                                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void btnRemoveChord_Click(object sender, EventArgs e)
+        private void ButtonRemoveChord_Click(object sender, EventArgs e)
         {
             RemoveItem();
         }
@@ -541,7 +541,7 @@ namespace PianoChordGenerator.WinUI
             }
         }
 
-        private void btnGenerateChordSheet_Click(object sender, EventArgs e)
+        private void ButtonGenerateChordSheet_Click(object sender, EventArgs e)
         {
             GenerateChordSheet();
         }
@@ -552,21 +552,21 @@ namespace PianoChordGenerator.WinUI
             ShowSuccess("Chordsheet successfully generated!");
         }
 
-        private void picRootPosition_Click(object sender, EventArgs e)
+        private void PictureBoxRootPosition_Click(object sender, EventArgs e)
         {
             radRootPosition.Checked = true;
             rad1stInversion.Checked = false;
             rad2ndInversion.Checked = false;
         }
 
-        private void picFirstInversion_Click(object sender, EventArgs e)
+        private void PictureBoxFirstInversion_Click(object sender, EventArgs e)
         {
             radRootPosition.Checked = false;
             rad1stInversion.Checked = true;
             rad2ndInversion.Checked = false;
         }
 
-        private void picSecondInversion_Click(object sender, EventArgs e)
+        private void PictureBoxSecondInversion_Click(object sender, EventArgs e)
         {
             radRootPosition.Checked = false;
             rad1stInversion.Checked = false;

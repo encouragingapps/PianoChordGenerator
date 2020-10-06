@@ -17,7 +17,7 @@ namespace PianoChordGenerator.WinUI
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPianoChordGenerator());
+            Application.Run(new FormPianoChordGenerator());
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace PianoChordGenerator.WinUI
 {
-    partial class frmPianoChordGenerator
+    partial class FormPianoChordGenerator
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPianoChordGenerator));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPianoChordGenerator));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabChordSheetGenerator = new System.Windows.Forms.TabPage();
             this.btnGenerateChordSheet = new System.Windows.Forms.Button();
@@ -98,7 +98,7 @@
             this.btnGenerateChordSheet.TabIndex = 3;
             this.btnGenerateChordSheet.Text = "Generate Chord Sheet";
             this.btnGenerateChordSheet.UseVisualStyleBackColor = false;
-            this.btnGenerateChordSheet.Click += new System.EventHandler(this.btnGenerateChordSheet_Click);
+            this.btnGenerateChordSheet.Click += new System.EventHandler(this.ButtonGenerateChordSheet_Click);
             // 
             // groupBox2
             // 
@@ -153,7 +153,7 @@
             this.picRootPosition.Size = new System.Drawing.Size(302, 108);
             this.picRootPosition.TabIndex = 4;
             this.picRootPosition.TabStop = false;
-            this.picRootPosition.Click += new System.EventHandler(this.picRootPosition_Click);
+            this.picRootPosition.Click += new System.EventHandler(this.PictureBoxRootPosition_Click);
             // 
             // radRootPosition
             // 
@@ -202,7 +202,7 @@
             this.picSecondInversion.Size = new System.Drawing.Size(302, 108);
             this.picSecondInversion.TabIndex = 4;
             this.picSecondInversion.TabStop = false;
-            this.picSecondInversion.Click += new System.EventHandler(this.picSecondInversion_Click);
+            this.picSecondInversion.Click += new System.EventHandler(this.PictureBoxSecondInversion_Click);
             // 
             // rad2ndInversion
             // 
@@ -221,7 +221,7 @@
             this.picFirstInversion.Size = new System.Drawing.Size(302, 108);
             this.picFirstInversion.TabIndex = 4;
             this.picFirstInversion.TabStop = false;
-            this.picFirstInversion.Click += new System.EventHandler(this.picFirstInversion_Click);
+            this.picFirstInversion.Click += new System.EventHandler(this.PictureBoxFirstInversion_Click);
             // 
             // rad1stInversion
             // 
@@ -241,7 +241,7 @@
             this.btnRemoveChord.TabIndex = 3;
             this.btnRemoveChord.Text = "<";
             this.btnRemoveChord.UseVisualStyleBackColor = true;
-            this.btnRemoveChord.Click += new System.EventHandler(this.btnRemoveChord_Click);
+            this.btnRemoveChord.Click += new System.EventHandler(this.ButtonRemoveChord_Click);
             // 
             // label3
             // 
@@ -261,7 +261,7 @@
             this.btnAddChord.TabIndex = 3;
             this.btnAddChord.Text = ">";
             this.btnAddChord.UseVisualStyleBackColor = true;
-            this.btnAddChord.Click += new System.EventHandler(this.btnAddChord_Click);
+            this.btnAddChord.Click += new System.EventHandler(this.ButtonAddChord_Click);
             // 
             // label1
             // 
@@ -280,16 +280,16 @@
             this.cboChordSelect.Name = "cboChordSelect";
             this.cboChordSelect.Size = new System.Drawing.Size(365, 36);
             this.cboChordSelect.TabIndex = 0;
-            this.cboChordSelect.SelectedIndexChanged += new System.EventHandler(this.cboChordSelect_SelectedIndexChanged);
+            this.cboChordSelect.SelectedIndexChanged += new System.EventHandler(this.ComboBoxChordSelect_SelectedIndexChanged);
             // 
-            // frmPianoChordGenerator
+            // FormPianoChordGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(965, 788);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmPianoChordGenerator";
+            this.Name = "FormPianoChordGenerator";
             this.Text = "Piano Chord Generator";
             this.tabControl1.ResumeLayout(false);
             this.tabChordSheetGenerator.ResumeLayout(false);
