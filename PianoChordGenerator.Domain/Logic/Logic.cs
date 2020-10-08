@@ -88,8 +88,6 @@ namespace PianoChordGenerator.Domain.Logic
 
                     IndicatorCounter++;
 
-
-
                     switch (IndicatorCounter)
                     {
                         case 1:
