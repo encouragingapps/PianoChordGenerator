@@ -81,7 +81,14 @@ namespace PianoChordGenerator.Domain.Logic
                                                   && x.ChartId == ChartCounter.ToString()).ToList())
                 {
 
+                    if(IndicatorCounter>24)
+                    {
+                        IndicatorCounter = 0;
+                    }
+
                     IndicatorCounter++;
+
+
 
                     switch (IndicatorCounter)
                     {
@@ -133,7 +140,150 @@ namespace PianoChordGenerator.Domain.Logic
                                   item.X, item.Y);
                             }
                             break;
-
+                        case 7:
+                            if (thisChord.IsSelectedPianoWhite7KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 8:
+                            if (thisChord.IsSelectedPianoWhite8KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 9:
+                            if (thisChord.IsSelectedPianoWhite9KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 10:
+                            if (thisChord.IsSelectedPianoWhite10KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 11:
+                            if (thisChord.IsSelectedPianoWhite11KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 12:
+                            if (thisChord.IsSelectedPianoWhite12KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 13:
+                            if (thisChord.IsSelectedPianoWhite13KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 14:
+                            if (thisChord.IsSelectedPianoWhite14KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 15:
+                            if (thisChord.IsSelectedPianoBlack1KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 16:
+                            if (thisChord.IsSelectedPianoBlack2KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 17:
+                            if (thisChord.IsSelectedPianoBlack3KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 18:
+                            if (thisChord.IsSelectedPianoBlack4KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 19:
+                            if (thisChord.IsSelectedPianoBlack5KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 20:
+                            if (thisChord.IsSelectedPianoBlack6KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 21:
+                            if (thisChord.IsSelectedPianoBlack7KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 22:
+                            if (thisChord.IsSelectedPianoBlack8KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 23:
+                            if (thisChord.IsSelectedPianoBlack9KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 24:
+                            if (thisChord.IsSelectedPianoBlack10KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
                     }
                 }
 
