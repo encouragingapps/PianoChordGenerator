@@ -9,11 +9,16 @@ namespace PianoChordGenerator.Domain.Models
     {
         const string Root = " - Root";
         const string First = " - 1st";
-        const string Second = " - 2nd";
+        const string Second = " - 2nd";      
 
         public PianoKeyChordSelectionModel(ChordsEnum chord)
         {
             SetChord(chord);
+        }
+
+        public PianoKeyChordSelectionModel()
+        {
+
         }
 
         public bool IsSelectedPianoWhite1KeyId { get; set; }

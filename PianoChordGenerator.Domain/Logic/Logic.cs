@@ -13,6 +13,8 @@ namespace PianoChordGenerator.Domain.Logic
 {
     public class Logic
     {
+        private PianoKeyChordSelectionModel thisChord;
+
         /// <summary>
         /// Get a list of chords needed for the select chord drop down list
         /// </summary>
@@ -36,64 +38,118 @@ namespace PianoChordGenerator.Domain.Logic
             PianoChartData pianoChartData = new PianoChartData();
 
 
-            using (XmlWriter writer = XmlWriter.Create(pathname))
+            using XmlWriter writer = XmlWriter.Create(pathname);
+            writer.WriteStartElement(null, "svg", "http://www.w3.org/2000/svg");
+            writer.WriteAttributeString("width", "8.5in");
+            writer.WriteAttributeString("height", "11in");
+
+
+            foreach (string chord in chartsToGenerate)
             {
+                ChartCounter++;
 
-                writer.WriteStartElement(null, "svg", "http://www.w3.org/2000/svg");
-                writer.WriteAttributeString("width", "8.5in");
-                writer.WriteAttributeString("height", "11in");
-
-
-                foreach (string chord in chartsToGenerate)
+                //Render all of the headers first
+                foreach (PianoChartRenderModel item in
+                        pianoChartData.ChartList.Where(x => x.PianoObject == PianoObjectTypeEnum.HeaderText
+                                                       && x.ChartId == ChartCounter.ToString()).ToList())
                 {
-                    ChartCounter++;
-
-                    //Render all of the headers first
-                    foreach (PianoChartRenderModel item in
-                            pianoChartData.ChartList.Where(x => x.PianoObject == PianoObjectTypeEnum.HeaderText
-                                                           && x.ChartId==ChartCounter.ToString()).ToList())
-                    {
-                        CreateHeader(writer, item.GenerateHeaderFriendlyId(),
-                                         chord,
-                                         item.X, item.Y);
-                    }
-
-                    //Render all of the keys
-                    foreach (PianoChartRenderModel item in
-                          pianoChartData.ChartList.Where(x => x.PianoObject == PianoObjectTypeEnum.PianoKey
-                                                         && x.ChartId==ChartCounter.ToString()).ToList())
-                    {
-                        CreateKey(writer,
-                                  item.PianoKeyType,
-                                  item.GeneratePianoKeyFriendlyId(),
-                                  item.X, item.Y);
-                    }
-
-                    //Render all of the indicators
-                    foreach (PianoChartRenderModel item in
-                       pianoChartData.ChartList.Where(x => x.PianoObject == PianoObjectTypeEnum.Indicator
-                                                      && x.ChartId == ChartCounter.ToString()).ToList())
-                    {
-                        CreateIndicator(writer,
-                                  item.PianoKeyType,
-                                  item.GenerateChordIndicatorFriendlyId(),
-                                  item.X, item.Y);
-                    }
-
+                    CreateHeader(writer, item.GenerateHeaderFriendlyId(),
+                                     chord,
+                                     item.X, item.Y);
                 }
 
-             
+                //Render all of the keys
+                foreach (PianoChartRenderModel item in
+                      pianoChartData.ChartList.Where(x => x.PianoObject == PianoObjectTypeEnum.PianoKey
+                                                     && x.ChartId == ChartCounter.ToString()).ToList())
+                {
+                    CreateKey(writer,
+                              item.PianoKeyType,
+                              item.GeneratePianoKeyFriendlyId(),
+                              item.X, item.Y);
+                }
 
 
-                //TODO: Add copyright
+                thisChord = new PianoKeyChordSelectionModel();
 
-                writer.WriteEndElement();
+                thisChord.SetChordByFullName(chord);
 
-                writer.Flush();
+                int IndicatorCounter = 0;
+
+                foreach (PianoChartRenderModel item in
+                   pianoChartData.ChartList.Where(x => x.PianoObject == PianoObjectTypeEnum.Indicator
+                                                  && x.ChartId == ChartCounter.ToString()).ToList())
+                {
+
+                    IndicatorCounter++;
+
+                    switch (IndicatorCounter)
+                    {
+                        case 1:
+                            if (thisChord.IsSelectedPianoWhite1KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 2:
+                            if (thisChord.IsSelectedPianoWhite2KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 3:
+                            if (thisChord.IsSelectedPianoWhite3KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 4:
+                            if (thisChord.IsSelectedPianoWhite4KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 5:
+                            if (thisChord.IsSelectedPianoWhite5KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+                        case 6:
+                            if (thisChord.IsSelectedPianoWhite6KeyId)
+                            {
+                                CreateIndicator(writer,
+                                  item.GenerateChordIndicatorFriendlyId(),
+                                  item.X, item.Y);
+                            }
+                            break;
+
+                    }
+                }
+
             }
+
+
+
+
+            //TODO: Add copyright
+
+            writer.WriteEndElement();
+
+            writer.Flush();
         }
 
-        private void CreateHeader(XmlWriter writer, string id, string msg, string x, string y)
+        void CreateHeader(XmlWriter writer, string id, string msg, string x, string y)
         {
 
             const String HEADER_STYLE = "font-style:normal;font-weight:bold;font-size:20px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332";
@@ -109,7 +165,7 @@ namespace PianoChordGenerator.Domain.Logic
             writer.WriteEndElement();
         }
 
-        private void CreateKey(XmlWriter writer, 
+        void CreateKey(XmlWriter writer, 
                                PianoKeyTypeEnum keytype,
                                string id, 
                                string x, 
@@ -143,12 +199,10 @@ namespace PianoChordGenerator.Domain.Logic
             writer.WriteEndElement();
         }
 
-        private void CreateIndicator(XmlWriter writer,
-                               PianoKeyTypeEnum keytype,
+        void CreateIndicator(XmlWriter writer,
                                string id,
                                string x,
-                               string y
-            )
+                               string y)
         {
             const string INDICATOR_STYLE = "opacity:1;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:0.78304571;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1";
             const string RADIUSX = "7.7355957";
@@ -164,10 +218,6 @@ namespace PianoChordGenerator.Domain.Logic
             writer.WriteEndElement();
 
         }
-
-
-        
-       
 
     }
 }

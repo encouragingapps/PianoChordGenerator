@@ -15,6 +15,7 @@ namespace PianoChordGenerator.Domain
             ChartList = new List<PianoChartRenderModel>();
             PianoChartRenderModel ChartItem;
 
+         
             #region "Variables"
             
             const int xWhiteKeyIndicatorOffset = 10;
@@ -153,8 +154,6 @@ namespace PianoChordGenerator.Domain
 
             #endregion
 
-
-
             #region "Chart 1 Left"
             //Header
             ChartItem = new PianoChartRenderModel
@@ -174,14 +173,20 @@ namespace PianoChordGenerator.Domain
 
             ChartList.Add(ChartItem);
 
+           
             ChartItem = new PianoChartRenderModel
-            {
-                ChartId = "1",PianoKeyId = "1", PianoObject = PianoObjectTypeEnum.Indicator,
-                PianoKeyType = PianoKeyTypeEnum.WhiteKey, X = xWhiteKey1IndicatorLeftChart,
-                Y = yRow1ChordIndicatorWhiteKeys
-            };
+                {
+                    ChartId = "1",
+                    PianoKeyId = "1",
+                    PianoObject = PianoObjectTypeEnum.Indicator,
+                    PianoKeyType = PianoKeyTypeEnum.WhiteKey,
+                    X = xWhiteKey1IndicatorLeftChart,
+                    Y = yRow1ChordIndicatorWhiteKeys
+                };
 
-            ChartList.Add(ChartItem);
+                ChartList.Add(ChartItem);
+           
+            
 
             ChartItem = new PianoChartRenderModel
             {
@@ -6078,7 +6083,6 @@ namespace PianoChordGenerator.Domain
 
 
         }
-
 
     }
 }
