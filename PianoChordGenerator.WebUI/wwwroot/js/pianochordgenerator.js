@@ -4,11 +4,8 @@
         alert('this loaded!');
     },
     data: {
-        CardVendor: '',
-        CardNickname: '',
-        CardType: '',
-        CardLimit: '',
-        CardBalance: ''       
+        Test: '',
+        Test2: ''
     },
     methods: {
         getChords: function (event) {
@@ -23,6 +20,5 @@
                     console.log(error);
                 });           
         }
-
     }
 })
