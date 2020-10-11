@@ -14,10 +14,5 @@
       "library": "vue@2.6.11",
       "destination": "wwwroot/vue/"
     }
-  ,
-{
-  "library": "vue@2.6.11",
-  "destination": "wwwroot/lib/vue/"
-}
 ]
 }
