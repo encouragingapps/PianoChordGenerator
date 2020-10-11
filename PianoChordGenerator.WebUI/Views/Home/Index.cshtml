@@ -1,8 +1,4 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <!--
     Created by EncouragingApps.com
@@ -12,7 +8,6 @@
         h1 {
             color: black;
             font-family: Arial, Helvetica, sans-serif;
-            margin-left: 25px;
             line-height: 0px;
         }
 
@@ -20,7 +15,16 @@
             color: black;
             font-family: Arial, Helvetica, sans-serif;
             line-height: 0px;
-            margin-left: 25px;
+        }
+
+        h4 {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 0px;
+        }
+
+        td {
+            vertical-align: middle;
         }
 
         .canvas {
@@ -35,7 +39,17 @@
         .dropdown {
             color: black;
             font-family: Arial, Helvetica, sans-serif;
-            margin-left: 25px;
+        }
+
+        .buttonstyle {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 150px;
+            height: 20px;
+        }
+
+        .liststyle {
+            width: 200px;
         }
     </style>
 </head>
@@ -46,33 +60,54 @@
     <div id="divChordBuilderWorkspace">
 
         <h3>Select a Chord:</h3>
+        <table>
+            <tr>
+                <td>
+                    <select name="chords" id="dropdownChords" class="dropdown">
+                        <option value="cmaj">C Major</option>
+                    </select>
+                    <h4>Root Position</h4>
+                    <input type="radio" id="radioRoot" name="radioInversion" value="root" class="radio" />
+                    <canvas id="pianoChart1Canvas" width="281" height="78" class="canvas">
+                        Your browser does not support the HTML5 canvas tag.
+                    </canvas>
 
-        <select name="chords" id="dropdownChords" class="dropdown">
-            <option value="cmaj">C Major</option>
-        </select>
+                    <br />
+
+                    <h4>1st Inversion</h4>
+                    <input type="radio" id="radioFirst" name="radioInversion" value="first" />
+                    <canvas id="pianoChart2Canvas" width="281" height="78" class="canvas">
+                        Your browser does not support the HTML5 canvas tag.
+                    </canvas>
+
+                    <br />
+
+                    <h4>2nd Inversion</h4>
+                    <input type="radio" id="radioFirst" name="radioInversion" value="second" />
+                    <canvas id="pianoChart3Canvas" width="281" height="78" class="canvas">
+                        Your browser does not support the HTML5 canvas tag.
+                    </canvas>
+                </td>
+                <td>
+                    <input type="button" id="addChord" value="Add Chord >>" class="buttonstyle" />
+                    <br />
+                    <br />
+                    <input type="button" id="removeChord" value="<< Remove Chord" class="buttonstyle" />
+                </td>
+                <td>
+                    <select id="selectedchords" name="selectedchords" multiple size="10" class="liststyle">
+                        <option value=""></option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+
+
         <br />
         <br />
-        <h3>Root Position</h3>
-        <input type="radio" id="radioRoot" name="radioInversion" value="root" class="radio" />
-        <canvas id="pianoChart1Canvas" width="281" height="78" class="canvas">
-            Your browser does not support the HTML5 canvas tag.
-        </canvas>
 
-        <br />
 
-        <h3>1st Inversion</h3>
-        <input type="radio" id="radioFirst" name="radioInversion" value="first" />
-        <canvas id="pianoChart2Canvas" width="281" height="78" class="canvas">
-            Your browser does not support the HTML5 canvas tag.
-        </canvas>
-
-        <br />
-
-        <h3>2nd Inversion</h3>
-        <input type="radio" id="radioFirst" name="radioInversion" value="second" />
-        <canvas id="pianoChart3Canvas" width="281" height="78" class="canvas">
-            Your browser does not support the HTML5 canvas tag.
-        </canvas>
         <br />
 
     </div>
