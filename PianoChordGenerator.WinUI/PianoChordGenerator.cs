@@ -230,6 +230,17 @@ namespace PianoChordGenerator.WinUI
                                    IMAGE_HEIGHT,
                                    IMAGE_WIDTH));
                     break;
+                case "asus2":
+                    SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.Asus2_Root, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.Asus2_1st, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH),
+                                   draw.DrawKeyboardAndChord(ChordsEnum.Asus2_2nd, false,
+                                   IMAGE_HEIGHT,
+                                   IMAGE_WIDTH));
+                    break;
                 case "asharpmaj":
                     SetChordImages(draw.DrawKeyboardAndChord(ChordsEnum.A_Sharp_Major_Root, false,
                                  IMAGE_HEIGHT,

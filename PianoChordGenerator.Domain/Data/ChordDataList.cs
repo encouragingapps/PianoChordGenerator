@@ -32,6 +32,7 @@ namespace PianoChordGenerator.Domain.Data
                 new KeyValuePair<string, string>("gsharpmaj", "G# Major"),
                 new KeyValuePair<string, string>("aflatmaj", "Ab Major"),
                 new KeyValuePair<string, string>("amaj", "A Major"),
+                new KeyValuePair<string, string>("asus2", "Asus2"),
                 new KeyValuePair<string, string>("asharpmaj", "A# Major"),
                 new KeyValuePair<string, string>("bflatmaj", "Bb Major"),
                 new KeyValuePair<string, string>("bmaj", "B Major"),

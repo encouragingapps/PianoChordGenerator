@@ -187,6 +187,18 @@ namespace PianoChordGenerator.Domain.Models
                     translateChordToEnum = ChordsEnum.A_Major_2nd;
                     SetChord(translateChordToEnum);
                     break;
+                case "Asus2" + Root:
+                    translateChordToEnum = ChordsEnum.Asus2_Root;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "Asus2" + First:
+                    translateChordToEnum = ChordsEnum.Asus2_1st;
+                    SetChord(translateChordToEnum);
+                    break;
+                case "Asus2" + Second:
+                    translateChordToEnum = ChordsEnum.Asus2_2nd;
+                    SetChord(translateChordToEnum);
+                    break;
                 case "A# Major" + Root:
                 case "Bb Major" + Root:
                     translateChordToEnum = ChordsEnum.A_Sharp_Major_Root;
@@ -772,6 +784,21 @@ namespace PianoChordGenerator.Domain.Models
                     IsSelectedPianoBlack3KeyId = true;
                     IsSelectedPianoWhite7KeyId = true;
                     IsSelectedPianoWhite9KeyId = true;
+                    break;
+                case ChordsEnum.Asus2_Root:
+                    IsSelectedPianoWhite3KeyId = true;
+                    IsSelectedPianoWhite4KeyId = true;
+                    IsSelectedPianoWhite7KeyId = true;
+                    break;
+                case ChordsEnum.Asus2_1st:
+                    IsSelectedPianoWhite7KeyId = true;
+                    IsSelectedPianoWhite10KeyId = true;
+                    IsSelectedPianoWhite13KeyId = true;
+                    break;
+                case ChordsEnum.Asus2_2nd:
+                    IsSelectedPianoWhite3KeyId = true;
+                    IsSelectedPianoWhite6KeyId = true;
+                    IsSelectedPianoWhite7KeyId = true;
                     break;
             }
         }

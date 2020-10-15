@@ -102,12 +102,15 @@ namespace PianoChordGenerator.Domain.Enums
         A_Minor_2nd = 93,
         A_Sharp_Minor_Root = 94,
         A_Sharp_Minor_1st = 95,
-        A_Sharp_Minor_2nd = 96,
+        A_Sharp_Minor_2nd = 96,        
         B_Flat_Minor_Root = 97,
         B_Flat_Minor_1st = 98,
         B_Flat_Minor_2nd = 99,
         B_Minor_Root = 100,
         B_Minor_1st = 101,
-        B_Minor_2nd = 102
+        B_Minor_2nd = 102,
+        Asus2_Root = 103,
+        Asus2_1st = 104,
+        Asus2_2nd = 105
     }
 }
