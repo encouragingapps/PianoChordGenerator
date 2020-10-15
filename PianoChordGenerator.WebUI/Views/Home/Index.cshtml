@@ -64,7 +64,7 @@
         <table>
             <tr>
                 <td>
-                    <select name="chords" id="dropdownChords" class="dropdown">
+                    <select name="chords" id="dropdownChords" class="dropdown" onchange="SetChords();">
                         <option value="None">(None)</option>
                         <option value="C Major">C Major</option>
                     </select>
@@ -119,6 +119,13 @@
         RenderPianoKeyboard(pianoChart2);
         RenderPianoKeyboard(pianoChart3);
 
+
+        function SetChords() {
+            var selectedChord = GetElementById("dropdownChords");
+
+            RenderPianoKeyboard(pianoChart1, selectedChord.value, "Root");
+        }
+
         function AddChord() {
 
             var listofChords = GetElementById("listboxSelectedChords");
@@ -149,51 +156,72 @@
 
         }
 
-        function RenderPianoKeyboard(canvasToRender, selectedChord) {
+        function RenderPianoKeyboard(canvasToRender, selectedChord, inversion) {
             var ctx = canvasToRender.getContext("2d");
             var WHITEKEY_H = 75;
             var BLACKKEY_H = 43;
             var BLACKKEY_W = 15;
             var BLACKKEY_Y = 0;
             var WHITEKEY_Y = 0;
+
+            ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
             ctx.beginPath();
-            ctx.fillStyle = whitekeycolor;
+
             var counter = 0;
 
+
+
             //Render Whitekeys
+
+            var circle = new Path2D();
+
+
             for (i = 0; i < 14; i++) {
                 counter += 20;
 
                 // code block
+                ctx.fillStyle = whitekeycolor;
                 ctx.rect(0, WHITEKEY_Y, counter, WHITEKEY_H);
+
 
                 //Render Chord Indicators
                 if (selectedChord != null || selectedChord != undefined) {
 
-                    switch (counter) {
+                    switch (i + 1) {
                         case 1:
-                            if (selectedChord == "C Major" && GetInversion() == "Root") {
-                                var circle = new Path2D();
-                                ctx.fillStyle = "#0000FF";
+                            if (selectedChord == "C Major" && inversion == "Root") {
+                                circle.fillStyle = "#0000FF";
                                 circle.arc(10, 60, 7, 0, 2 * Math.PI);
-                                ctx.fill(circle);
                             }
                             break;
                         case 2:
                             // code block
                             break;
+                        case 3:
+                            if (selectedChord == "C Major" && inversion == "Root") {
+                                circle.fillStyle = "#0000FF";
+                                circle.arc(50, 60, 7, 0, 2 * Math.PI);
+                            }
+                            break;
+                        case 4:
+                            break;
+                        case 5:
+                            if (selectedChord == "C Major" && inversion == "Root") {
+                                circle.fillStyle = "#0000FF";
+                                circle.arc(90, 60, 7, 0, 2 * Math.PI);
+                            }
+                            break;
+                            break;
                         default:
                         // code block
                     }
 
-                    if (counter == 1) {
 
-
-                    }
                 }
-
-
             }
+
+            ctx.fill(circle);
+
 
             //Render Blackkeys
             ctx.fillStyle = blackkeycolor;
@@ -210,22 +238,38 @@
             ctx.stroke();
 
 
-            var circle = new Path2D();
-            ctx.fillStyle = "#0000FF";
-            circle.arc(10, 60, 7, 0, 2 * Math.PI);
-            circle.arc(30, 60, 7, 0, 2 * Math.PI);
-            circle.arc(50, 60, 7, 0, 2 * Math.PI);
-            circle.arc(70, 60, 7, 0, 2 * Math.PI);
-            circle.arc(90, 60, 7, 0, 2 * Math.PI);
-            circle.arc(110, 60, 7, 0, 2 * Math.PI);
-            circle.arc(130, 60, 7, 0, 2 * Math.PI);
-            circle.arc(150, 60, 7, 0, 2 * Math.PI);
-            circle.arc(170, 60, 7, 0, 2 * Math.PI);
-            circle.arc(190, 60, 7, 0, 2 * Math.PI);
-            circle.arc(210, 60, 7, 0, 2 * Math.PI);
-            circle.arc(230, 60, 7, 0, 2 * Math.PI);
-            circle.arc(250, 60, 7, 0, 2 * Math.PI);
-            circle.arc(270, 60, 7, 0, 2 * Math.PI);
+
+            //var circle = new Path2D();
+            //ctx.fillStyle = "#0000FF";
+            //Key 1
+            //circle.arc(10, 60, 7, 0, 2 * Math.PI);
+            //Key 2
+            //circle.arc(30, 60, 7, 0, 2 * Math.PI);
+            //Key 3
+            //circle.arc(50, 60, 7, 0, 2 * Math.PI);
+            //Key 4
+            //circle.arc(70, 60, 7, 0, 2 * Math.PI);
+            //Key 5
+            //circle.arc(90, 60, 7, 0, 2 * Math.PI);
+            //Key 6
+            //circle.arc(110, 60, 7, 0, 2 * Math.PI);
+            //Key 7
+            //circle.arc(130, 60, 7, 0, 2 * Math.PI);
+            //Key 8
+            //circle.arc(150, 60, 7, 0, 2 * Math.PI);
+            //Key 9
+            //circle.arc(170, 60, 7, 0, 2 * Math.PI);
+            //Key 10
+            //circle.arc(190, 60, 7, 0, 2 * Math.PI);
+            //Key 11
+            //circle.arc(210, 60, 7, 0, 2 * Math.PI);
+            //Key 12
+            //circle.arc(230, 60, 7, 0, 2 * Math.PI);
+            //Key 13
+            //circle.arc(250, 60, 7, 0, 2 * Math.PI);
+            //Key 14
+            //circle.arc(270, 60, 7, 0, 2 * Math.PI);
+
             ctx.fill(circle);
 
         }
