@@ -252,16 +252,12 @@
             //Render Blackkeys
             ctx.beginPath;
             ctx.fillStyle = blackkeycolor;
-            ctx.fillRect(12, BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
-            ctx.fillRect(34, BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
-            ctx.fillRect(72, BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
-            ctx.fillRect(92, BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
-            ctx.fillRect(112, BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
-            ctx.fillRect(154, BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
-            ctx.fillRect(174, BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
-            ctx.fillRect(214, BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
-            ctx.fillRect(234, BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
-            ctx.fillRect(254, BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
+            var xposList = [12, 34, 72, 92, 112, 154, 174, 214, 234, 254];
+
+            for (i = 0; i < xposList.length; i++) {                
+                ctx.fillRect(xposList[i], BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
+            }
+            
             ctx.stroke();
 
 
