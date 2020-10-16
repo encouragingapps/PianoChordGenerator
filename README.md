@@ -5,6 +5,10 @@ Chords are a foundational part of any song. The goal of this project is to creat
 
 ![Piano Chord Sheet](https://github.com/encouragingapps/PianoChordGenerator/blob/master/PianoChordGenerator.Domain/Wiki/WikiImage1.PNG)
 
+I am also working on a web version of the application:
+
+![Piano Chord Generator Web Version](https://github.com/encouragingapps/PianoChordGenerator/blob/master/PianoChordGenerator.Domain/Wiki/WikiImage3.PNG)
+
 # Technologies Used
 
 * .Net Core 3.1
