@@ -9,10 +9,6 @@
     {
       "library": "toastr.js@2.1.4",
       "destination": "wwwroot/lib/toastr.js/"
-    },
-    {
-      "library": "vue@2.6.11",
-      "destination": "wwwroot/vue/"
     }
 ]
 }

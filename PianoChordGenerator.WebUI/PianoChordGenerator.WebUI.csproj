@@ -10,4 +10,8 @@
     <PackageReference Include="vue" Version="2.6.11" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PianoChordGenerator.Domain\PianoChordGenerator.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

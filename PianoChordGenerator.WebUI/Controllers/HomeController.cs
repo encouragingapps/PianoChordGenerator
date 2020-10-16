@@ -4,7 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
+using PianoChordGenerator.Domain.Data;
 using PianoChordGenerator.WebUI.Models;
 
 namespace PianoChordGenerator.WebUI.Controllers
@@ -20,6 +22,24 @@ namespace PianoChordGenerator.WebUI.Controllers
 
         public IActionResult Index()
         {
+            List<SelectListItem> chordsList = new List<SelectListItem>();
+            SelectListItem chord;
+            ChordDataList list = new ChordDataList();
+            var data = new List<KeyValuePair<string, string>>();
+
+            data = list.GetData();
+
+            foreach (KeyValuePair<string, string> kvp in data)
+                {
+                    chord = new SelectListItem();
+                    chord.Text = kvp.Value;
+                    chord.Value = kvp.Key;
+                    chordsList.Add(chord);                    
+                }
+          
+
+            ViewBag.ChordList = chordsList;
+
             return View();
         }
 
