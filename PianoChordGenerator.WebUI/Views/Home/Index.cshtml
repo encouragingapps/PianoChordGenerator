@@ -169,8 +169,6 @@
 
             var counter = 0;
 
-
-
             //Render Whitekeys
 
             var circle = new Path2D();
@@ -180,42 +178,43 @@
                 counter += 20;
 
                 // code block
-                ctx.fillStyle = whitekeycolor;
+
+                ctx.beginPath;
                 ctx.rect(0, WHITEKEY_Y, counter, WHITEKEY_H);
+                ctx.fillStyle = whitekeycolor;
 
-
+                ctx.beginPath;
                 //Render Chord Indicators
                 if (selectedChord != null || selectedChord != undefined) {
 
                     switch (i + 1) {
                         case 1:
                             if (selectedChord == "C Major" && inversion == "Root") {
-                                circle.fillStyle = "#0000FF";
                                 circle.arc(10, 60, 7, 0, 2 * Math.PI);
                             }
                             break;
                         case 2:
                             // code block
+                            //circle.arc(30, 60, 7, 0, 2 * Math.PI);
                             break;
                         case 3:
                             if (selectedChord == "C Major" && inversion == "Root") {
-                                circle.fillStyle = "#0000FF";
                                 circle.arc(50, 60, 7, 0, 2 * Math.PI);
                             }
                             break;
                         case 4:
+                            //circle.arc(70, 60, 7, 0, 2 * Math.PI);
                             break;
                         case 5:
                             if (selectedChord == "C Major" && inversion == "Root") {
-                                circle.fillStyle = "#0000FF";
                                 circle.arc(90, 60, 7, 0, 2 * Math.PI);
                             }
-                            break;
                             break;
                         default:
                         // code block
                     }
 
+                    ctx.fillStyle = "#0000FF";
 
                 }
             }
@@ -224,6 +223,7 @@
 
 
             //Render Blackkeys
+            ctx.beginPath;
             ctx.fillStyle = blackkeycolor;
             ctx.fillRect(12, BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
             ctx.fillRect(34, BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
@@ -270,7 +270,6 @@
             //Key 14
             //circle.arc(270, 60, 7, 0, 2 * Math.PI);
 
-            ctx.fill(circle);
 
         }
 
