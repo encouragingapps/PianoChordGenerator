@@ -124,6 +124,8 @@
             var selectedChord = GetElementById("dropdownChords");
 
             RenderPianoKeyboard(pianoChart1, selectedChord.value, "Root");
+            RenderPianoKeyboard(pianoChart2, selectedChord.value, "First");
+            RenderPianoKeyboard(pianoChart3, selectedChord.value, "Second");
         }
 
         function AddChord() {
@@ -173,7 +175,6 @@
 
             var circle = new Path2D();
 
-
             for (i = 0; i < 14; i++) {
                 counter += 20;
 
@@ -201,6 +202,9 @@
                             if (selectedChord == "C Major" && inversion == "Root") {
                                 circle.arc(50, 60, 7, 0, 2 * Math.PI);
                             }
+                            if (selectedChord == "C Major" && inversion == "First") {
+                                circle.arc(50, 60, 7, 0, 2 * Math.PI);
+                            }
                             break;
                         case 4:
                             //circle.arc(70, 60, 7, 0, 2 * Math.PI);
@@ -209,9 +213,50 @@
                             if (selectedChord == "C Major" && inversion == "Root") {
                                 circle.arc(90, 60, 7, 0, 2 * Math.PI);
                             }
+                            if (selectedChord == "C Major" && inversion == "First") {
+                                circle.arc(90, 60, 7, 0, 2 * Math.PI);
+                            }
+                            if (selectedChord == "C Major" && inversion == "Second") {
+                                circle.arc(90, 60, 7, 0, 2 * Math.PI);
+                            }
+                            break;
+                            break;
+                        case 6:
+                            //circle.arc(110, 60, 7, 0, 2 * Math.PI);
+                            break;
+                        case 7:
+                            //circle.arc(130, 60, 7, 0, 2 * Math.PI);
+                            break;
+                        case 8:
+                            if (selectedChord == "C Major" && inversion == "First") {
+                                circle.arc(150, 60, 7, 0, 2 * Math.PI);
+                            }
+                            if (selectedChord == "C Major" && inversion == "Second") {
+                                circle.arc(150, 60, 7, 0, 2 * Math.PI);
+                            }
+                            break;
+                        case 9:
+                            //circle.arc(170, 60, 7, 0, 2 * Math.PI);
+                            break;
+                        case 10:
+                            if (selectedChord == "C Major" && inversion == "Second") {
+                                circle.arc(190, 60, 7, 0, 2 * Math.PI);
+                            }
+                            break;
+                        case 11:
+                            //circle.arc(210, 60, 7, 0, 2 * Math.PI);
+                            break;
+                        case 12:
+                            //circle.arc(230, 60, 7, 0, 2 * Math.PI);
+                            break;
+                        case 13:
+                            //circle.arc(250, 60, 7, 0, 2 * Math.PI);
+                            break;
+                        case 14:
+                            //circle.arc(270, 60, 7, 0, 2 * Math.PI);
                             break;
                         default:
-                        // code block
+                            break;
                     }
 
                     ctx.fillStyle = "#0000FF";
@@ -236,39 +281,6 @@
             ctx.fillRect(234, BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
             ctx.fillRect(254, BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
             ctx.stroke();
-
-
-
-            //var circle = new Path2D();
-            //ctx.fillStyle = "#0000FF";
-            //Key 1
-            //circle.arc(10, 60, 7, 0, 2 * Math.PI);
-            //Key 2
-            //circle.arc(30, 60, 7, 0, 2 * Math.PI);
-            //Key 3
-            //circle.arc(50, 60, 7, 0, 2 * Math.PI);
-            //Key 4
-            //circle.arc(70, 60, 7, 0, 2 * Math.PI);
-            //Key 5
-            //circle.arc(90, 60, 7, 0, 2 * Math.PI);
-            //Key 6
-            //circle.arc(110, 60, 7, 0, 2 * Math.PI);
-            //Key 7
-            //circle.arc(130, 60, 7, 0, 2 * Math.PI);
-            //Key 8
-            //circle.arc(150, 60, 7, 0, 2 * Math.PI);
-            //Key 9
-            //circle.arc(170, 60, 7, 0, 2 * Math.PI);
-            //Key 10
-            //circle.arc(190, 60, 7, 0, 2 * Math.PI);
-            //Key 11
-            //circle.arc(210, 60, 7, 0, 2 * Math.PI);
-            //Key 12
-            //circle.arc(230, 60, 7, 0, 2 * Math.PI);
-            //Key 13
-            //circle.arc(250, 60, 7, 0, 2 * Math.PI);
-            //Key 14
-            //circle.arc(270, 60, 7, 0, 2 * Math.PI);
 
 
         }
