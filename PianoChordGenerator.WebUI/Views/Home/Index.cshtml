@@ -115,13 +115,13 @@
             var listofChords = GetElementById("listboxSelectedChords");
             var selectedChord = GetElementById("dropdownChords");
 
-            if (selectedChord.value == 'None') { return false; }
+            if (selectedChord.value == "maj" || selectedChord.value=="min") { return false; }
             if (DoesChordExist(selectedChord.value)) { return false; }
             if (listofChords.options.length > 10) { return false }
 
             var opt = document.createElement("option");
 
-            opt.text = selectedChord.value;
+            opt.text = selectedChord.text;
             opt.value = selectedChord.value;
             listofChords.options.add(opt);
 
@@ -154,19 +154,33 @@
             var counter = 0;
 
             //Render Whitekeys
-
-            var circle = new Path2D();
-
+            ctx.beginPath;
             for (i = 0; i < 14; i++) {
                 counter += 20;
 
-                // code block
-
-                ctx.beginPath;
+                
                 ctx.rect(0, WHITEKEY_Y, counter, WHITEKEY_H);
                 ctx.fillStyle = whitekeycolor;
+            }
 
-                ctx.beginPath;
+            //Render Blackkeys
+            ctx.beginPath;
+            ctx.fillStyle = blackkeycolor;
+            var xposList = [12, 34, 72, 92, 112, 154, 174, 214, 234, 254];
+
+            for (i = 0; i < xposList.length; i++) {
+                ctx.fillRect(xposList[i], BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
+            }
+
+            ctx.stroke();
+
+            //Render Indicators
+            var circle = new Path2D();
+
+            ctx.beginPath;
+            for (i = 0; i < 14; i++) {
+                counter += 20;
+                             
                 //Render Chord Indicators
                 if (selectedChord != null || selectedChord != undefined) {
 
@@ -243,22 +257,34 @@
 
                     ctx.fillStyle = "#0000FF";
 
+                    //Black key1
+                    //circle.arc(20, 23, 7, 0, 2 * Math.PI);
+                    //Black key2
+                    //circle.arc(42, 23, 7, 0, 2 * Math.PI);
+                    //Black key3
+                    //circle.arc(80, 23, 7, 0, 2 * Math.PI);
+                    //Black key4
+                    //circle.arc(100, 23, 7, 0, 2 * Math.PI);
+                    //Black key5
+                    //circle.arc(120, 23, 7, 0, 2 * Math.PI);
+                    //Black key6
+                    //circle.arc(162, 23, 7, 0, 2 * Math.PI);
+                    //Black key7
+                    //circle.arc(182, 23, 7, 0, 2 * Math.PI);
+                    //Black key8
+                    //circle.arc(221, 23, 7, 0, 2 * Math.PI);
+                    //Black key9
+                    //circle.arc(242, 23, 7, 0, 2 * Math.PI);
+                    //Black key10
+                    //circle.arc(262, 23, 7, 0, 2 * Math.PI);
+
                 }
             }
 
             ctx.fill(circle);
 
 
-            //Render Blackkeys
-            ctx.beginPath;
-            ctx.fillStyle = blackkeycolor;
-            var xposList = [12, 34, 72, 92, 112, 154, 174, 214, 234, 254];
-
-            for (i = 0; i < xposList.length; i++) {                
-                ctx.fillRect(xposList[i], BLACKKEY_Y, BLACKKEY_W, BLACKKEY_H);
-            }
             
-            ctx.stroke();
 
 
         }
