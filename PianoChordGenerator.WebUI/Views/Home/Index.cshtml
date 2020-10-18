@@ -6,7 +6,7 @@
 -->
 <head>
     <style>
-        
+
         td {
             vertical-align: middle;
         }
@@ -22,26 +22,25 @@
 
         .liststyle {
             width: 200px;
-        }  
+        }
 
-        .addRemoveButtons{
+        .addRemoveButtons {
             width: 200px
-        } 
-                
+        }
     </style>
 </head>
-<body>  
+<body>
     <div id="divChordBuilderWorkspace">
-        <div id="divMsg"></div>        
+        <div id="divMsg"></div>
         <table>
             <tr>
                 <td>
                     <b>Select a Chord:</b>
                     <br />
                     @*<select name="chords" id="dropdownChords" onchange="SetChords();">
-                        <option value="None">(None)</option>
-                        <option value="C Major">C Major</option>
-                    </select>*@
+                            <option value="None">(None)</option>
+                            <option value="C Major">C Major</option>
+                        </select>*@
 
                     @Html.DropDownList("dropdownChords",
                                       (IEnumerable<SelectListItem>)ViewBag.ChordList,
@@ -66,7 +65,7 @@
 
                     <br />
 
-                    <p><b>1st Inversion</b></p>
+                    <p><b>2nd Inversion</b></p>
                     <input type="radio" id="radioFirst" name="radioInversion" value="second" />
                     <canvas id="canvasPianoChart3" width="281" height="78" class="canvas">
                         Your browser does not support the HTML5 canvas tag.
@@ -115,7 +114,7 @@
             var listofChords = GetElementById("listboxSelectedChords");
             var selectedChord = GetElementById("dropdownChords");
 
-            if (selectedChord.value == "maj" || selectedChord.value=="min") { return false; }
+            if (selectedChord.value == "maj" || selectedChord.value == "min") { return false; }
             if (DoesChordExist(selectedChord.value)) { return false; }
             if (listofChords.options.length > 10) { return false }
 
@@ -158,7 +157,7 @@
             for (i = 0; i < 14; i++) {
                 counter += 20;
 
-                
+
                 ctx.rect(0, WHITEKEY_Y, counter, WHITEKEY_H);
                 ctx.fillStyle = whitekeycolor;
             }
@@ -179,20 +178,20 @@
 
             ctx.beginPath;
             for (i = 0; i < 14; i++) {
-                counter += 20;
-                             
-                //Render Chord Indicators
+
+                //Render White Key Indicators
                 if (selectedChord != null || selectedChord != undefined) {
 
                     switch (i + 1) {
                         case 1:
                             if (selectedChord == "cmaj" && inversion == "Root") {
                                 circle.arc(10, 60, 7, 0, 2 * Math.PI);
-                            }
+                            }                          
                             break;
                         case 2:
-                            // code block
+
                             //circle.arc(30, 60, 7, 0, 2 * Math.PI);
+
                             break;
                         case 3:
                             if (selectedChord == "cmaj" && inversion == "Root") {
@@ -203,7 +202,13 @@
                             }
                             break;
                         case 4:
-                            //circle.arc(70, 60, 7, 0, 2 * Math.PI);
+                            if (selectedChord == "csharpmaj" && inversion == "Root") {
+                                circle.arc(70, 60, 7, 0, 2 * Math.PI);
+                            }
+                            if (selectedChord == "csharpmaj" && inversion == "First") {
+                                circle.arc(70, 60, 7, 0, 2 * Math.PI);
+                            }
+
                             break;
                         case 5:
                             if (selectedChord == "cmaj" && inversion == "Root") {
@@ -215,7 +220,6 @@
                             if (selectedChord == "cmaj" && inversion == "Second") {
                                 circle.arc(90, 60, 7, 0, 2 * Math.PI);
                             }
-                            break;
                             break;
                         case 6:
                             //circle.arc(110, 60, 7, 0, 2 * Math.PI);
@@ -240,7 +244,9 @@
                             }
                             break;
                         case 11:
-                            //circle.arc(210, 60, 7, 0, 2 * Math.PI);
+                            if (selectedChord == "csharpmaj" && inversion == "Second") {
+                                circle.arc(210, 60, 7, 0, 2 * Math.PI);
+                            }
                             break;
                         case 12:
                             //circle.arc(230, 60, 7, 0, 2 * Math.PI);
@@ -254,38 +260,73 @@
                         default:
                             break;
                     }
-
-                    ctx.fillStyle = "#0000FF";
-
-                    //Black key1
-                    //circle.arc(20, 23, 7, 0, 2 * Math.PI);
-                    //Black key2
-                    //circle.arc(42, 23, 7, 0, 2 * Math.PI);
-                    //Black key3
-                    //circle.arc(80, 23, 7, 0, 2 * Math.PI);
-                    //Black key4
-                    //circle.arc(100, 23, 7, 0, 2 * Math.PI);
-                    //Black key5
-                    //circle.arc(120, 23, 7, 0, 2 * Math.PI);
-                    //Black key6
-                    //circle.arc(162, 23, 7, 0, 2 * Math.PI);
-                    //Black key7
-                    //circle.arc(182, 23, 7, 0, 2 * Math.PI);
-                    //Black key8
-                    //circle.arc(221, 23, 7, 0, 2 * Math.PI);
-                    //Black key9
-                    //circle.arc(242, 23, 7, 0, 2 * Math.PI);
-                    //Black key10
-                    //circle.arc(262, 23, 7, 0, 2 * Math.PI);
-
                 }
             }
 
+            ctx.fillStyle = "#0000FF";
             ctx.fill(circle);
 
 
-            
+            ctx.beginPath;
 
+            //Render Black Key Indicators
+            for (i = 0; i < 10; i++) {
+                switch (i + 1) {
+                    case 1:
+                        if (selectedChord == "csharpmaj" && inversion == "Root") {
+                            circle.moveTo(20, 23);
+                            circle.arc(20, 23, 7, 0, 2 * Math.PI);
+                        }
+                        break;
+                    case 2:
+                        //circle.arc(42, 23, 7, 0, 2 * Math.PI);
+                        break;
+                    case 3:
+                        //circle.arc(80, 23, 7, 0, 2 * Math.PI);
+                        break;
+                    case 4:
+                        circle.moveTo(100, 23);
+                        if (selectedChord == "csharpmaj" && inversion == "Root") {
+                            circle.arc(100, 23, 7, 0, 2 * Math.PI);
+                        }
+                        if (selectedChord == "csharpmaj" && inversion == "First") {
+                            circle.arc(100, 23, 7, 0, 2 * Math.PI);
+                        }
+                        if (selectedChord == "csharpmaj" && inversion == "Second") {
+                            circle.arc(100, 23, 7, 0, 2 * Math.PI);
+                        }
+                        break;
+                    case 5:
+                        //circle.arc(120, 23, 7, 0, 2 * Math.PI);
+                        break;
+                    case 6:
+                        circle.moveTo(162, 23);
+                        if (selectedChord == "csharpmaj" && inversion == "First") {
+                            circle.arc(162, 23, 7, 0, 2 * Math.PI);
+                        }
+                        if (selectedChord == "csharpmaj" && inversion == "Second") {
+                            circle.arc(162, 23, 7, 0, 2 * Math.PI);
+                        }
+                        break;
+                    case 7:
+                        //circle.arc(182, 23, 7, 0, 2 * Math.PI);
+                        break;
+                    case 8:
+                        //circle.arc(221, 23, 7, 0, 2 * Math.PI);
+                        break;
+                    case 9:
+                        //circle.arc(242, 23, 7, 0, 2 * Math.PI);
+                        break;
+                    case 10:
+                        //circle.arc(262, 23, 7, 0, 2 * Math.PI);
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            ctx.fillStyle = "#0000FF";
+            ctx.fill(circle);
 
         }
 
