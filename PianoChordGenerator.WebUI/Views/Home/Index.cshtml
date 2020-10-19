@@ -113,16 +113,27 @@
 
             var listofChords = GetElementById("listboxSelectedChords");
             var selectedChord = GetElementById("dropdownChords");
-
-            if (selectedChord.value == "maj" || selectedChord.value == "min") { return false; }
-            if (DoesChordExist(selectedChord.value)) { return false; }
-            if (listofChords.options.length > 10) { return false; }
-
             var opt = document.createElement("option");
-
-            opt.text = selectedChord.text;
+            opt.text = selectedChord.options[selectedChord.selectedIndex].text;
             opt.value = selectedChord.value;
+
+
+            if (selectedChord.value == "maj" || selectedChord.value == "min") {
+                toastr.warning("Please select a chord.");
+                return false;
+            }
+            if (DoesChordExist(selectedChord.value)) {
+                toastr.warning("This chord already exists.");
+                return false;
+            }
+            if (listofChords.options.length > 10) {
+                toastr.warning("Only 10 chords are allowed.")
+                return false;
+            }
+
             listofChords.options.add(opt);
+
+            toastr.info("Chord successfully added.")
 
             return true;
 
