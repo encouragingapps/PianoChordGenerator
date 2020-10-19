@@ -226,11 +226,7 @@
                                 selectedChord == "dflatmin") &&
                                 (inversion == "Root" || inversion == "First")) {
                                 circle.arc(50, 60, 7, 0, 2 * Math.PI);
-                            }
-                            if (selectedChord == "dmin" &&
-                                (inversion == "Root" || inversion == "First")) {
-                                circle.arc(50, 60, 7, 0, 2 * Math.PI);
-                            }
+                            }                         
                             if ((selectedChord == "emaj" ||
                                 selectedChord == "emin") &&
                                 inversion == "Root") {
@@ -263,7 +259,8 @@
                                                    
                             break;
                         case 5:
-                            if (selectedChord == "cmaj" &&
+                            if ((selectedChord == "cmaj" ||
+                                selectedChord == "cmin") &&
                                 (inversion == "Root" ||
                                  inversion == "First" ||
                                  inversion == "Second"))
@@ -290,11 +287,10 @@
                                 (inversion == "Root" || inversion == "First" || inversion == "Second")) {
                                 circle.arc(110, 60, 7, 0, 2 * Math.PI);
                             }
-                            if ((selectedChord == "dmaj" ||
-                                selectedChord == "dmin") &&
+                            if ((selectedChord == "dmaj" || selectedChord=="dmin") &&
                                 (inversion=="Root" || inversion=="First" || inversion=="Second")) {
                                 circle.arc(110, 60, 7, 0, 2 * Math.PI);
-                            }                                  
+                            }                                                              
                             if (selectedChord == "fmaj" &&
                                 (inversion=="Root" || inversion=="First")) {
                                 circle.arc(110, 60, 7, 0, 2 * Math.PI);
@@ -430,8 +426,7 @@
                                 circle.arc(230, 60, 7, 0, 2 * Math.PI);
                             }
                             if (selectedChord == "emin" &&
-                                (inversion == "First" ||
-                                 inversion == "Second")) {
+                                inversion == "Second") {
                                 circle.arc(230, 60, 7, 0, 2 * Math.PI);
                             }
                             if ((selectedChord == "gmaj" ||
@@ -502,7 +497,7 @@
                             circle.arc(42, 23, 7, 0, 2 * Math.PI);
                         }
                         if (selectedChord == "cmin" &&
-                            (inversion == "Root" &&
+                            (inversion == "Root" ||
                              inversion == "First")) {
                             circle.arc(42, 23, 7, 0, 2 * Math.PI);
                         }
@@ -513,11 +508,14 @@
                             inversion == "Root") {
                             circle.arc(42, 23, 7, 0, 2 * Math.PI);
                         }
-                        if ((selectedChord == "gsharpmaj" ||
-                            selectedChord == "gsharpmin" ||
-                            selectedChord == "aflatmaj" ||
-                            selectedChord == "aflatmin") &&
+                        if ((selectedChord == "gsharpmaj" ||                         
+                            selectedChord == "aflatmaj") &&
                             (inversion == "First" || inversion == "Second")) {
+                            circle.arc(42, 23, 7, 0, 2 * Math.PI);
+                        }
+                        if ((selectedChord == "gsharpmin" ||                            
+                            selectedChord == "aflatmin") &&
+                            (inversion == "Second")) {
                             circle.arc(42, 23, 7, 0, 2 * Math.PI);
                         }
                         
@@ -537,8 +535,8 @@
                         }    
                         if ((selectedChord == "dsharpmin" ||
                             selectedChord == "eflatmin") &&
-                            (inversion == "Root") &&
-                            inversion == "First") {
+                            (inversion == "Root" ||
+                            inversion == "First")) {
                             circle.arc(80, 23, 7, 0, 2 * Math.PI);
                         }
                         if ((selectedChord == "fsharpmaj" ||
@@ -600,13 +598,7 @@
                              inversion == "Second")) {
                             circle.arc(120, 23, 7, 0, 2 * Math.PI);
                         }                        
-                                   
-                        if (selectedChord == "cmin" &&
-                            (inversion == "Root" ||
-                             inversion == "First" ||
-                             inversion == "Second")) {
-                            circle.arc(120, 23, 7, 0, 2 * Math.PI);
-                        }
+                                                          
                         if ((selectedChord == "dsharpmaj" ||
                              selectedChord == "dsharpmin" ||
                              selectedChord == "eflatmaj" ||
@@ -684,7 +676,7 @@
                         }
                         if ((selectedChord == "gsharpmin" ||
                             selectedChord == "aflatmin") &&
-                            (inversion == "Root" &&
+                            (inversion == "Root" ||
                              inversion == "First")) {
                             circle.arc(182, 23, 7, 0, 2 * Math.PI);
                         }
