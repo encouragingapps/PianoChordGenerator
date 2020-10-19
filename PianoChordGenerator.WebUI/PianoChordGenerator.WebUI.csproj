@@ -14,4 +14,10 @@
     <ProjectReference Include="..\PianoChordGenerator.Domain\PianoChordGenerator.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\images\logotitle.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

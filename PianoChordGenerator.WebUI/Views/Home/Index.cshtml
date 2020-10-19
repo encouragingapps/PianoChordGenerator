@@ -7,18 +7,24 @@
 <head>
     <style>
 
+         
         td {
             vertical-align: middle;
         }
+        
 
         .canvas {
             border: 1px solid #d3d3d3;
             vertical-align: middle;
         }
 
+        /*
         .radio {
             vertical-align: middle;
+            width: 20px;
         }
+
+        */
 
         .liststyle {
             width: 200px;
@@ -50,26 +56,51 @@
                     <br />
 
                     <p><b>Root Position</b></p>
-                    <input type="radio" id="radioRoot" name="radioInversion" value="root" class="radio" />
-                    <canvas id="canvasPianoChart1" width="281" height="78" class="canvas">
-                        Your browser does not support the HTML5 canvas tag.
-                    </canvas>
-
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="radio" id="radioRoot" name="radioInversion" value="root" class="radio" />
+                            </td>                        
+                            <td>
+                                <canvas id="canvasPianoChart1" width="281" height="78" class="canvas">
+                                    Your browser does not support the HTML5 canvas tag.
+                                </canvas>
+                            </td>
+                        </tr>
+                    </table>
+                    
                     <br />
 
                     <p><b>1st Inversion</b></p>
-                    <input type="radio" id="radioFirst" name="radioInversion" value="first" />
-                    <canvas id="canvasPianoChart2" width="281" height="78" class="canvas">
-                        Your browser does not support the HTML5 canvas tag.
-                    </canvas>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="radio" id="radioFirst" name="radioInversion" value="first" />
+                            </td>
+                            <td>
+                                <canvas id="canvasPianoChart2" width="281" height="78" class="canvas">
+                                    Your browser does not support the HTML5 canvas tag.
+                                </canvas>
+                            </td>
+                        </tr>
+                    </table>                                       
 
                     <br />
 
                     <p><b>2nd Inversion</b></p>
-                    <input type="radio" id="radioFirst" name="radioInversion" value="second" />
-                    <canvas id="canvasPianoChart3" width="281" height="78" class="canvas">
-                        Your browser does not support the HTML5 canvas tag.
-                    </canvas>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="radio" id="radioFirst" name="radioInversion" value="second" />
+                            </td>
+                            <td>
+                                <canvas id="canvasPianoChart3" width="281" height="78" class="canvas">
+                                    Your browser does not support the HTML5 canvas tag.
+                                </canvas>
+                            </td>
+                        </tr>
+                    </table>                    
+                   
                 </td>
                 <td>
                     <input type="button" id="buttonAddChord" value="Add Chord >>"
