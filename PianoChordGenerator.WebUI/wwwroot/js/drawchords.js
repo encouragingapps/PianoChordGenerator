@@ -122,12 +122,11 @@ function GenerateChordSheet() {
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             async: true,
-            success: function (data) {                                
-                GetElementById("svgOutput").innerHTML = data;
-                toastr.info("Chord sheet was successfully generated.");
+            success: function (data) {
+                toastr.success(data);
             },
             error: function (data) {
-                toastr.error("Something went wrong generating the chord sheet. Please try again.");
+                toastr.error(data);
             }
          });
 

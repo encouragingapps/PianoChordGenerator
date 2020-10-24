@@ -1,118 +1,14 @@
+
+***BUILD ICONS***
 Build perfect icons with this site.
 https://icoconvert.com/
 
+***MISSING WINDOWS FORM DESIGNER***
+If the windows designer disappears, then follow these steps:
+If the Forms designer is missing. Try adding another Windows Form 
+to your project. Once I did this, the Designer for my other 
+Windows Form appeared.
 
-Generate Chords using Easel JS
+***MINIFY JAVASCRIPT***
+https://www.uglifyjs.net/
 
-var canvas = document.getElementById("testCanvas");
-var stage = new createjs.Stage(canvas);
-
-function drawRectangle(){
-
- var whitekey1 = new createjs.Shape();
- whitekey1.graphics.beginStroke("black").beginFill("#fff").drawRect(0, 0, 20, 75);
- 
- var whitekey2 = new createjs.Shape();
- whitekey2.graphics.beginStroke("black").beginFill("white").drawRect(0, 0, 40, 75);
- 
- var whitekey3 = new createjs.Shape();
- whitekey3.graphics.beginStroke("black").beginFill("white").drawRect(0, 0, 60, 75);
- 
-  var whitekey4 = new createjs.Shape();
- whitekey4.graphics.beginStroke("black").beginFill("#fff").drawRect(0, 0, 80, 75);
- 
- var whitekey5 = new createjs.Shape();
- whitekey5.graphics.beginStroke("black").beginFill("white").drawRect(0, 0, 100, 75);
- 
- var whitekey6 = new createjs.Shape();
- whitekey6.graphics.beginStroke("black").beginFill("white").drawRect(0, 0, 120, 75);
- 
-  var whitekey7 = new createjs.Shape();
- whitekey7.graphics.beginStroke("black").beginFill("#fff").drawRect(0, 0, 140, 75);
- 
- var whitekey8 = new createjs.Shape();
- whitekey8.graphics.beginStroke("black").beginFill("white").drawRect(0, 0, 160, 75);
- 
- var whitekey9 = new createjs.Shape();
- whitekey9.graphics.beginStroke("black").beginFill("white").drawRect(0, 0, 180, 75);
- 
-  var whitekey10 = new createjs.Shape();
- whitekey10.graphics.beginStroke("black").beginFill("#fff").drawRect(0, 0, 200, 75);
- 
- var whitekey11 = new createjs.Shape();
- whitekey11.graphics.beginStroke("black").beginFill("white").drawRect(0, 0, 220, 75);
- 
- var whitekey12 = new createjs.Shape();
- whitekey12.graphics.beginStroke("black").beginFill("white").drawRect(0, 0, 240, 75);
- 
- var whitekey13 = new createjs.Shape();
- whitekey13.graphics.beginStroke("black").beginFill("white").drawRect(0, 0, 260, 75);
- 
- var whitekey14 = new createjs.Shape();
- whitekey14.graphics.beginStroke("black").beginFill("white").drawRect(0, 0, 280, 75);
- 
- var blackkey1 = new createjs.Shape();
- blackkey1.graphics.beginFill("black").drawRect(12, 0, 15, 43);
- 
- var blackkey2 = new createjs.Shape();
- blackkey2.graphics.beginFill("black").drawRect(34, 0, 15, 43);
-
- var blackkey3 = new createjs.Shape();
- blackkey3.graphics.beginFill("black").drawRect(72, 0, 15, 43);
- 
- var blackkey4 = new createjs.Shape();
- blackkey4.graphics.beginFill("black").drawRect(92, 0, 15, 43);
- 
- var blackkey5 = new createjs.Shape();
- blackkey5.graphics.beginFill("black").drawRect(112, 0, 15, 43);
- 
- var blackkey6 = new createjs.Shape();
- blackkey6.graphics.beginFill("black").drawRect(154, 0, 15, 43);
- 
- var blackkey7 = new createjs.Shape();
- blackkey7.graphics.beginFill("black").drawRect(174, 0, 15, 43);
- 
- var blackkey8 = new createjs.Shape();
- blackkey8.graphics.beginFill("black").drawRect(214, 0, 15, 43);
- 
- var blackkey9 = new createjs.Shape();
- blackkey9.graphics.beginFill("black").drawRect(234, 0, 15, 43);
- 
- var blackkey10 = new createjs.Shape();
- blackkey10.graphics.beginFill("black").drawRect(254, 0, 15, 43);
- 
- 
- 
- stage.addChild(whitekey14);
- stage.addChild(whitekey13);
- stage.addChild(whitekey12);
- stage.addChild(whitekey11);
- stage.addChild(whitekey10);
- stage.addChild(whitekey9);
- stage.addChild(whitekey8);
- stage.addChild(whitekey7);
- stage.addChild(whitekey6);
- stage.addChild(whitekey5);
- stage.addChild(whitekey4);
- stage.addChild(whitekey3);
- stage.addChild(whitekey2);
- stage.addChild(whitekey1);
- stage.addChild(blackkey10);
- stage.addChild(blackkey9);
- stage.addChild(blackkey8);
- stage.addChild(blackkey7);
- stage.addChild(blackkey6);
- stage.addChild(blackkey5);
- stage.addChild(blackkey4);
- stage.addChild(blackkey3);
- stage.addChild(blackkey2);
- stage.addChild(blackkey1);
- 
-    
-}
-function drawShapes(){
-drawRectangle();
-stage.update();
-}
-
-drawShapes();
