@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -47,10 +48,11 @@ namespace PianoChordGenerator.WebUI.Controllers
         {
             return View();
         }
-
-        public ActionResult GetChordData()
+        
+        public JsonResult GenerateChordSheet([FromBody] JSONModel data)
         {
-            return View();
+            var s = data;
+            return Json("OK");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

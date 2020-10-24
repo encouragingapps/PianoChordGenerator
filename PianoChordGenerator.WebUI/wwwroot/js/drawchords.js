@@ -19,6 +19,36 @@ function SetChords() {
     RenderPianoKeyboard(pianoChart3, selectedChord.value, "Second");
 }
 
+function SelectInversion(inversion) {
+
+    var Root = GetElementById("radioRoot");
+    var First = GetElementById("radioFirst");
+    var Second = GetElementById("radioSecond");
+
+    switch (inversion) {
+        case "Root":
+            Root.checked = true;
+            First.checked = false;
+            Second.checked = false;
+            break;
+        case "First":
+            Root.checked = false;
+            First.checked = true;
+            Second.checked = false;
+            break;
+        case "Second":
+            Root.checked = false;
+            First.checked = false;
+            Second.checked = true;
+            break;
+        default:
+            Root.checked = false;
+            First.checked = false;
+            Second.checked = false;
+            break;
+    }
+}
+
 function AddChord() {
 
     var listofChords = GetElementById("listboxSelectedChords");
@@ -70,6 +100,33 @@ function AddChord() {
 
 }
 
+function GenerateChordSheet() {
+
+    if (GetTotalChords() == 0) {
+        toastr.warning("No chords were specified for export.")
+        return;
+    }
+
+    $.ajax({
+            url: '/Home/GenerateChordSheet',
+            type: 'POST',
+            data: JSON.stringify({                
+                chordsList: $("listboxSelectedChords")
+            }),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            async: true,
+            success: function (data) {
+                toastr.info(data);
+            },
+            error: function (data) {
+                toastr.error(data);
+            }
+         });
+
+    return true;
+}
+
 function RemoveChord() {
     var listofChords = GetElementById("listboxSelectedChords");
    
@@ -104,7 +161,10 @@ function DoesChordExist(ChordToCheck) {
             return true;
         }
     }
+}
 
+function GetTotalChords() {
+    return $("#listboxSelectedChords").find("option").length;
 }
 
 function RenderPianoKeyboard(canvasToRender, selectedChord, inversion) {
