@@ -63,11 +63,9 @@ namespace PianoChordGenerator.WebUI.Controllers
 
                 svgXml = logic.GeneratePianoChartSvgXml(chordList);
 
-                RedirectToAction("Index","RenderedChordSheetController", 
-                                          new { svgXML = svgXml });
+                return Json(svgXml);
+              
                 
-
-                return Json("OK");
             } catch 
             {
                 //return Json("Something went wrong generating chord chart. Please try again."); 

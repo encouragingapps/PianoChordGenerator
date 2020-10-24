@@ -122,8 +122,11 @@ function GenerateChordSheet() {
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             async: true,
-            success: function (data) {
-                toastr.success(data);
+            success: function (data) {                
+                GetElementById('divRenderedChordSheet').innerHTML = data;
+                $("#divRenderedChordSheet").show();
+                $("#divChordBuilderWorkspace").hide();
+                toastr.success("Chord sheet successfully generated!");
             },
             error: function (data) {
                 toastr.error(data);
