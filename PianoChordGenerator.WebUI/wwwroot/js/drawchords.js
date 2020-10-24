@@ -127,6 +127,7 @@ function GenerateChordSheet() {
                 $("#divRenderedChordSheet").show();
                 $("#divChordBuilderWorkspace").hide();
                 toastr.success("Chord sheet successfully generated!");
+                toastr.info("Congratulations! The chord sheet can now be printed from your web browser!")
             },
             error: function (data) {
                 toastr.error(data);
@@ -212,6 +213,7 @@ function RenderPianoKeyboard(canvasToRender, selectedChord, inversion) {
 
     //Render Indicators
     var circle = new Path2D();
+    var KeyIndicatorColor = "#808000";
 
     ctx.beginPath;
     for (i = 0; i < 14; i++) {
@@ -494,7 +496,8 @@ function RenderPianoKeyboard(canvasToRender, selectedChord, inversion) {
         }
     }
 
-    ctx.fillStyle = "#0000FF";
+    //Blue
+    ctx.fillStyle = KeyIndicatorColor;    
     ctx.fill(circle);
 
 
@@ -775,7 +778,7 @@ function RenderPianoKeyboard(canvasToRender, selectedChord, inversion) {
         }
     }
 
-    ctx.fillStyle = "#0000FF";
+    ctx.fillStyle = KeyIndicatorColor;
     ctx.fill(circle);
 
 }

@@ -354,7 +354,7 @@ namespace PianoChordGenerator.Domain.Logic
                                string x,
                                string y)
         {
-            const string INDICATOR_STYLE = "opacity:1;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:0.78304571;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1";
+            const string INDICATOR_STYLE = "opacity:1;fill:#808000;fill-opacity:1;stroke:#000000;stroke-width:0.78304571;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1";
             const string RADIUSX = "7.7355957";
             const string RADIUSY = "6.8881383";
 
