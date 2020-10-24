@@ -115,18 +115,19 @@ function GenerateChordSheet() {
   
     $.ajax({
             url: '/Home/GenerateChordSheet',
-            type: 'POST',
+            type: 'Post',
             data: JSON.stringify({                
                 "Json": JSON.stringify(arr)
             }),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             async: true,
-            success: function (data) {
-                toastr.info(data);
+            success: function (data) {                                
+                GetElementById("svgOutput").innerHTML = data;
+                toastr.info("Chord sheet was successfully generated.");
             },
             error: function (data) {
-                toastr.error(data);
+                toastr.error("Something went wrong generating the chord sheet. Please try again.");
             }
          });
 

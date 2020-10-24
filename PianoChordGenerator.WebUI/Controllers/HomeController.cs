@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using PianoChordGenerator.Domain.Data;
+using PianoChordGenerator.Domain.Logic;
+using PianoChordGenerator.Domain.Enums;
 using PianoChordGenerator.WebUI.Models;
 
 namespace PianoChordGenerator.WebUI.Controllers
@@ -49,12 +51,24 @@ namespace PianoChordGenerator.WebUI.Controllers
         {
             return View();
         }
-        
-        public JsonResult GenerateChordSheet([FromBody] JSONModel data)
+
+        [HttpPost] 
+        public ActionResult GenerateChordSheet([FromBody] JSONModel data)
         {            
-            var chordList = new List<string>(JsonConvert.DeserializeObject<List<string>>(data.Json));            
-            
-            return Json("OK");
+            try
+            {
+                var chordList = new List<string>(JsonConvert.DeserializeObject<List<string>>(data.Json));
+                var logic = new Logic();
+                string svgXml;
+
+                svgXml = logic.GeneratePianoChartSvgXml(chordList);
+
+                return Json(svgXml);
+            } catch
+            {
+                return Json("Something went wrong generating chord chart. Please try again.");
+            }
+                        
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

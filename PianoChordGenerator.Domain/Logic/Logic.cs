@@ -29,16 +29,16 @@ namespace PianoChordGenerator.Domain.Logic
         /// Generate the SVG pianochord output
         /// </summary>
         /// <param name="pianoChartData"></param>
-        public void GeneratePianoChart(List<string> chartsToGenerate)
+        public string GeneratePianoChartSvgXml(List<string> chartsToGenerate)
         {
 
+            using MemoryStream stream = new MemoryStream();         
+            using XmlWriter writer = XmlWriter.Create(stream);
+                        
             int ChartCounter=0;
-            string pathname = @"C:\Temp\" + Guid.NewGuid().ToString() + "pianochord.svg";
-
+            
             PianoChartData pianoChartData = new PianoChartData();
-
-
-            using XmlWriter writer = XmlWriter.Create(pathname);
+                        
             writer.WriteStartElement(null, "svg", "http://www.w3.org/2000/svg");
             writer.WriteAttributeString("width", "8.5in");
             writer.WriteAttributeString("height", "11in");
@@ -287,14 +287,16 @@ namespace PianoChordGenerator.Domain.Logic
 
             }
 
-
-
-
-            //TODO: Add copyright
-
             writer.WriteEndElement();
 
             writer.Flush();
+            stream.Position = 0;
+           
+            var sr = new StreamReader(stream);
+            var output = sr.ReadToEnd();
+
+            return output;
+            
         }
 
         void CreateHeader(XmlWriter writer, string id, string msg, string x, string y)

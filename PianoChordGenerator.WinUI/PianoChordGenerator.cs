@@ -559,7 +559,10 @@ namespace PianoChordGenerator.WinUI
 
         private void GenerateChordSheet()
         {
-            logic.GeneratePianoChart(lstSelectedChords.Items.Cast<string>().ToList());
+            logic.GeneratePianoChartSvgXml(lstSelectedChords.Items.Cast<string>().ToList());
+            //TODO: Write business logic in the business logic layer to write the chordsheet
+            //      to a file.
+
             ShowSuccess("Chordsheet successfully generated!");
         }
 
