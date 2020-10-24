@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using PianoChordGenerator.Domain.Data;
 using PianoChordGenerator.WebUI.Models;
 
@@ -26,16 +27,16 @@ namespace PianoChordGenerator.WebUI.Controllers
             List<SelectListItem> chordsList = new List<SelectListItem>();
             SelectListItem chord;
             ChordDataList list = new ChordDataList();
-            var data = new List<KeyValuePair<string, string>>();
-
-            data = list.GetData();
+            var data = new List<KeyValuePair<string, string>>(list.GetData());
 
             foreach (KeyValuePair<string, string> kvp in data)
                 {
-                    chord = new SelectListItem();
-                    chord.Text = kvp.Value;
-                    chord.Value = kvp.Key;
-                    chordsList.Add(chord);                    
+                chord = new SelectListItem
+                {
+                    Text = kvp.Value,
+                    Value = kvp.Key
+                };
+                chordsList.Add(chord);                    
                 }
           
 
@@ -50,8 +51,9 @@ namespace PianoChordGenerator.WebUI.Controllers
         }
         
         public JsonResult GenerateChordSheet([FromBody] JSONModel data)
-        {
-            var s = data;
+        {            
+            var chordList = new List<string>(JsonConvert.DeserializeObject<List<string>>(data.Json));            
+            
             return Json("OK");
         }
 

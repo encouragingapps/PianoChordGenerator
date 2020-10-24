@@ -107,11 +107,17 @@ function GenerateChordSheet() {
         return;
     }
 
+    var arr = new Array;
+
+    $("#listboxSelectedChords > option").each(function () {
+        arr.push($(this).text());
+    });
+  
     $.ajax({
             url: '/Home/GenerateChordSheet',
             type: 'POST',
             data: JSON.stringify({                
-                chordsList: $("listboxSelectedChords")
+                "Json": JSON.stringify(arr)
             }),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
