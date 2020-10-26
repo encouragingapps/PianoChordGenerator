@@ -529,6 +529,12 @@ namespace PianoChordGenerator.WinUI
                                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        private void ShowError(string msg)
+        {
+            MessageBox.Show(msg, "Error",
+                               MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         private void ButtonRemoveChord_Click(object sender, EventArgs e)
         {
             RemoveItem();
@@ -559,11 +565,22 @@ namespace PianoChordGenerator.WinUI
 
         private void GenerateChordSheet()
         {
-            logic.GeneratePianoChartSvgXml(lstSelectedChords.Items.Cast<string>().ToList());
+            string pathname = @"C:\Temp\" + Guid.NewGuid().ToString() + "pianochord.svg";
+            bool isSuccess;
+
+            isSuccess = logic.OutputChordChart(lstSelectedChords.Items.Cast<string>().ToList(), pathname);
             //TODO: Write business logic in the business logic layer to write the chordsheet
             //      to a file.
-
-            ShowSuccess("Chordsheet successfully generated!");
+            
+            if(isSuccess)
+            {               
+                ShowSuccess("Chordsheet successfully generated to "+pathname);
+            }
+            else
+            {
+                ShowError("Unable to generate chordsheet. Please try again.");
+            }
+            
         }
 
         private void PictureBoxRootPosition_Click(object sender, EventArgs e)

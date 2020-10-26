@@ -25,6 +25,22 @@ namespace PianoChordGenerator.Domain.Logic
             return data.GetData();
         }
         
+
+        public bool OutputChordChart(List<string> chartsToGenerate, string FilePath)
+        {
+            try
+            {
+
+                string xmlToWrite = GeneratePianoChartSvgXml(chartsToGenerate);
+                System.IO.File.WriteAllText(FilePath, xmlToWrite);
+                return true;
+            } catch
+            {
+                return false;
+            }
+                       
+        }
+
         /// <summary>
         /// Generate the SVG pianochord output
         /// </summary>
