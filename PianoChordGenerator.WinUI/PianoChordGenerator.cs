@@ -573,7 +573,7 @@ namespace PianoChordGenerator.WinUI
             //      to a file.
             
             if(isSuccess)
-            {               
+            {                
                 ShowSuccess("Chordsheet successfully generated to "+pathname);
             }
             else
